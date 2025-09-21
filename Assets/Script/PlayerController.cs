@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 		
+		/// 
+		animator.SetFloat("x", 0f);
+        animator.SetFloat("y", -1f);
+		
     }
 
     void Update() {
