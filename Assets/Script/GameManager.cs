@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         } else {
             Destroy(this);
         }
+		
     }
 	
 	public void setDialog( string message ) {

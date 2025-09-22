@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 5934e69da95d56945a9ec93664f9a7ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5120400376093989277
+    second: Monstro_poeira_0
+  - first:
+      213: -1062142529967857233
+    second: Monstro_poeira_1
+  - first:
+      213: 205242445987788968
+    second: Monstro_poeira_2
+  - first:
+      213: -4233277079930200225
+    second: Monstro_poeira_3
+  - first:
+      213: 4388140856991675906
+    second: Monstro_poeira_4
+  - first:
+      213: 3564349512965941353
+    second: Monstro_poeira_5
+  - first:
+      213: -979165672588497508
+    second: Monstro_poeira_6
+  - first:
+      213: -3243936396965577369
+    second: Monstro_poeira_7
+  - first:
+      213: 7136864052093931007
+    second: Monstro_poeira_8
+  - first:
+      213: 5698395931100795863
+    second: Monstro_poeira_9
+  - first:
+      213: 6167041238457931640
+    second: Monstro_poeira_10
+  - first:
+      213: -3776429945426197301
+    second: Monstro_poeira_11
+  - first:
+      213: 4347913298126491363
+    second: Monstro_poeira_12
+  - first:
+      213: 8433352507553220229
+    second: Monstro_poeira_13
+  - first:
+      213: -6416213953131068178
+    second: Monstro_poeira_14
+  - first:
+      213: -5607008833982838135
+    second: Monstro_poeira_15
+  - first:
+      213: -6216641264908150064
+    second: Monstro_poeira_16
+  - first:
+      213: -5200438739250625820
+    second: Monstro_poeira_17
+  - first:
+      213: -3668481714929786190
+    second: Monstro_poeira_18
+  - first:
+      213: 8016808521317333738
+    second: Monstro_poeira_19
+  - first:
+      213: 759846443843965045
+    second: Monstro_poeira_20
+  - first:
+      213: -5482783833587580124
+    second: Monstro_poeira_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monstro_poeira_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99dbd453015f0740800000000000000
+      internalID: 5120400376093989277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 55
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa16e681ff28241f0800000000000000
+      internalID: -1062142529967857233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 55
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a83fedcaea29d200800000000000000
+      internalID: 205242445987788968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 55
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f15f6bce06045c0800000000000000
+      internalID: -4233277079930200225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 55
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206fd5d2cdec5ec30800000000000000
+      internalID: 4388140856991675906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 54
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968ebaf4ffc177130800000000000000
+      internalID: 3564349512965941353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 54
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d2b15320e4962f0800000000000000
+      internalID: -979165672588497508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76df7e8b8093bf2d0800000000000000
+      internalID: -3243936396965577369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 2
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd405bea0c3b0360800000000000000
+      internalID: 7136864052093931007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d35bce68e4c41f40800000000000000
+      internalID: 5698395931100795863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_10
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877587df45bb59550800000000000000
+      internalID: 6167041238457931640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_11
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 3
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc449b719fc679bc0800000000000000
+      internalID: -3776429945426197301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_12
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 4
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eec601cb14e65c30800000000000000
+      internalID: 4347913298126491363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstro_poeira_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 5
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5860c5e7c69490570800000000000000
+      internalID: 8433352507553220229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b5b37cf7311cff04b8158d6cda83aaeb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Monstro_poeira_0: 5120400376093989277
+      Monstro_poeira_1: -1062142529967857233
+      Monstro_poeira_10: 6167041238457931640
+      Monstro_poeira_11: -3776429945426197301
+      Monstro_poeira_12: 4347913298126491363
+      Monstro_poeira_13: 8433352507553220229
+      Monstro_poeira_2: 205242445987788968
+      Monstro_poeira_3: -4233277079930200225
+      Monstro_poeira_4: 4388140856991675906
+      Monstro_poeira_5: 3564349512965941353
+      Monstro_poeira_6: -979165672588497508
+      Monstro_poeira_7: -3243936396965577369
+      Monstro_poeira_8: 7136864052093931007
+      Monstro_poeira_9: 5698395931100795863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

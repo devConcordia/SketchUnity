@@ -1,0 +1,606 @@
+fileFormatVersion: 2
+guid: 5ba0936789d31e049a4c8caf940b07a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2288037883272305724
+    second: Vassoura_0
+  - first:
+      213: 6363205230790201136
+    second: Vassoura_1
+  - first:
+      213: 5638691977353889705
+    second: Vassoura_2
+  - first:
+      213: -631552514451863900
+    second: Vassoura_3
+  - first:
+      213: 5362216317918295211
+    second: Vassoura_4
+  - first:
+      213: 1144586980088511493
+    second: Vassoura_5
+  - first:
+      213: -5495583489832500992
+    second: Vassoura_6
+  - first:
+      213: 5637587358966414821
+    second: Vassoura_7
+  - first:
+      213: 5387109557861375259
+    second: Vassoura_8
+  - first:
+      213: 6487750229900758171
+    second: Vassoura_9
+  - first:
+      213: 1441481184040886503
+    second: Vassoura_10
+  - first:
+      213: 3097735641823302598
+    second: Vassoura_11
+  - first:
+      213: -3481215928517601486
+    second: Vassoura_12
+  - first:
+      213: -5759641534348751780
+    second: Vassoura_13
+  - first:
+      213: -7295832797759794112
+    second: Vassoura_14
+  - first:
+      213: 5865545863746863984
+    second: Vassoura_15
+  - first:
+      213: 1797987063128284641
+    second: Vassoura_16
+  - first:
+      213: -8103303257592981215
+    second: Vassoura_17
+  - first:
+      213: 7843363427125522054
+    second: Vassoura_18
+  - first:
+      213: 2889545907158344391
+    second: Vassoura_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vassoura_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 27
+        height: 26
+      alignment: 9
+      pivot: {x: 0.1852832, y: 0.18952003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c1511155eb0cf10800000000000000
+      internalID: 2288037883272305724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 151
+        width: 31
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4725892, y: 0.4734459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f48269175ae4850800000000000000
+      internalID: 6363205230790201136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 156
+        width: 27
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5236039, y: 0.46965244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a706047a78a04e40800000000000000
+      internalID: 5638691977353889705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 159
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6871f85564c37f0800000000000000
+      internalID: -631552514451863900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 165
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4b256b45b6a6a40800000000000000
+      internalID: 5362216317918295211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 154
+        width: 36
+        height: 44
+      alignment: 9
+      pivot: {x: 0.4114863, y: 0.5337965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c76ba4bc362ef00800000000000000
+      internalID: 1144586980088511493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 154
+        width: 36
+        height: 42
+      alignment: 9
+      pivot: {x: 0.47049543, y: 0.52528965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001480fcee3cbb3b0800000000000000
+      internalID: -5495583489832500992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 163
+        width: 35
+        height: 25
+      alignment: 9
+      pivot: {x: 0.45751342, y: 0.53398925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edfc6175dbbc3e40800000000000000
+      internalID: 5637587358966414821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_9
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 161
+        width: 34
+        height: 27
+      alignment: 9
+      pivot: {x: 0.41877568, y: 0.53147155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c81b4e57e190a50800000000000000
+      internalID: 6487750229900758171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 101
+        width: 38
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5335422, y: 0.49267474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0aa25ef7b210410800000000000000
+      internalID: 1441481184040886503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_11
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 97
+        width: 40
+        height: 38
+      alignment: 9
+      pivot: {x: 0.53717613, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3d1fa572e5dfa20800000000000000
+      internalID: 3097735641823302598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 95
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: 0.51554424, y: 0.5414505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237d64aae8c30bfc0800000000000000
+      internalID: -3481215928517601486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_13
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 101
+        width: 34
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4217507, y: 0.53812915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c8e875a84a110b0800000000000000
+      internalID: -5759641534348751780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 97
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04412e4b9beffba90800000000000000
+      internalID: -7295832797759794112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_15
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 94
+        width: 26
+        height: 37
+      alignment: 9
+      pivot: {x: 0.52451265, y: 0.49425837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073c466d2ea966150800000000000000
+      internalID: 5865545863746863984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_16
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 98
+        width: 25
+        height: 34
+      alignment: 9
+      pivot: {x: 0.74142575, y: 0.34090334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed528035bbb3f810800000000000000
+      internalID: 1797987063128284641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_17
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 104
+        width: 28
+        height: 26
+      alignment: 9
+      pivot: {x: 0.8034777, y: 0.17317845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12997efce984b8f80800000000000000
+      internalID: -8103303257592981215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vassoura_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e6b162b7939dc60800000000000000
+      internalID: 7843363427125522054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 520d514593214194282d9bc4881b9642
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vassoura_0: 2288037883272305724
+      Vassoura_1: 6363205230790201136
+      Vassoura_10: 1441481184040886503
+      Vassoura_11: 3097735641823302598
+      Vassoura_12: -3481215928517601486
+      Vassoura_13: -5759641534348751780
+      Vassoura_14: -7295832797759794112
+      Vassoura_15: 5865545863746863984
+      Vassoura_16: 1797987063128284641
+      Vassoura_17: -8103303257592981215
+      Vassoura_18: 7843363427125522054
+      Vassoura_19: 2889545907158344391
+      Vassoura_2: 5638691977353889705
+      Vassoura_3: -631552514451863900
+      Vassoura_4: 5362216317918295211
+      Vassoura_5: 1144586980088511493
+      Vassoura_6: -5495583489832500992
+      Vassoura_7: 5637587358966414821
+      Vassoura_8: 5387109557861375259
+      Vassoura_9: 6487750229900758171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
