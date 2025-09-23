@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 	
 	[SerializeField] private int HP = 5;
 	[SerializeField] private int Energy = 5;
+	[SerializeField] private string attack = "vassourada";
 	
 	
 	
@@ -16,11 +17,9 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private GameObject InteractionPrefab;
 	[SerializeField] private GameObject AttackPrefab;
 	
-	[SerializeField] private GameObject weapon;
-	private WeaponController weaponCtrl;
-	
 	[SerializeField] private float speed = 5;
 	
+	private SpriteRenderer spriteRenderer;
 	private Animator animator;
     private Rigidbody2D body;
 	
@@ -28,12 +27,11 @@ public class PlayerController : MonoBehaviour
 		
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-		
-		weaponCtrl = weapon.GetComponent<WeaponController>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
 		
 		/// 
-		animator.SetFloat("x", 0f);
-        animator.SetFloat("y", 1f);
+		animator.SetFloat("x", -1f);
+        animator.SetFloat("y", -1f);
 		
 	//	Time.timeScale = .5f;
 		
@@ -64,14 +62,13 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);
 		
-		if( Input.GetKeyDown(KeyCode.F) ) {
+		if( Input.GetKeyDown(KeyCode.Space) && attack != "" ) {
 			
-			animator.SetTrigger("attack");
-			weaponCtrl.broomAttack( direction.x, direction.y );
+			animator.SetTrigger( attack );
 		
 			Vector3 pos = transform.position + 2f * new Vector3( direction.x, direction.y, 0f );
 			
-			Instantiate( AttackPrefab, pos, Quaternion.identity);
+			Instantiate( AttackPrefab, pos, Quaternion.identity );
 			
 		//	GameObject attackGameObject = Instantiate( AttackPrefab, pos, Quaternion.identity);
 		//	AttackController AtkCtrl = attackGameObject.GetComponent<AttackController>();
@@ -90,6 +87,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate() {
 		
         body.linearVelocity = input.normalized * speed;
+		spriteRenderer.sortingOrder = Mathf.RoundToInt( -transform.position.y * 10 );
 		
     }
 

@@ -188,6 +188,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2741156439650089907, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848444363265334837, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7020764193973885309, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
       propertyPath: m_Name
       value: House
