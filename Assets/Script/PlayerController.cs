@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
 	
-	[SerializeField] private int HP = 5;
-	[SerializeField] private int Energy = 5;
-	[SerializeField] private string attack = "vassourada";
+	private int health = 100;
 	
+	[SerializeField] private HudController hud;
+	
+	[SerializeField] private string attack = "vassourada";
 	
 	
     private Vector2 input;
@@ -18,6 +20,8 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private GameObject AttackPrefab;
 	
 	[SerializeField] private float speed = 5;
+	
+	private bool waitingAttack = false;
 	
 	private SpriteRenderer spriteRenderer;
 	private Animator animator;
@@ -30,8 +34,8 @@ public class PlayerController : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		
 		/// 
-		animator.SetFloat("x", -1f);
-        animator.SetFloat("y", -1f);
+	//	animator.SetFloat("x", -1f);
+    //   animator.SetFloat("y", -1f);
 		
 	//	Time.timeScale = .5f;
 		
@@ -43,6 +47,13 @@ public class PlayerController : MonoBehaviour
 		
     }
 
+    void FixedUpdate() {
+		
+        body.linearVelocity = input.normalized * speed;
+		spriteRenderer.sortingOrder = Mathf.RoundToInt( -transform.position.y * 10 );
+		
+    }
+	
     void GetInput() {
 		
         input.x = Input.GetAxisRaw("Horizontal");
@@ -62,33 +73,98 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);
 		
-		if( Input.GetKeyDown(KeyCode.Space) && attack != "" ) {
-			
-			animator.SetTrigger( attack );
+		Interaction();
+		Attack();
 		
-			Vector3 pos = transform.position + 2f * new Vector3( direction.x, direction.y, 0f );
+    }
+	
+	void Interaction() {
+		
+		if( Input.GetKeyDown( KeyCode.E ) ) {
 			
-			Instantiate( AttackPrefab, pos, Quaternion.identity );
-			
-		//	GameObject attackGameObject = Instantiate( AttackPrefab, pos, Quaternion.identity);
-		//	AttackController AtkCtrl = attackGameObject.GetComponent<AttackController>();
-		//	AtkCtrl.damage = 1;
-			
-		} else if( Input.GetKeyDown(KeyCode.E) ) {
-			
-			Vector3 pos = transform.position + 2f * new Vector3( direction.x, direction.y, 0f );
+			Vector3 pos = transform.position + new Vector3( direction.x, direction.y, 0f );
 			
 			Instantiate( InteractionPrefab, pos, Quaternion.identity);
 			
 		}
 		
-    }
-
-    void FixedUpdate() {
+	}
+	
+	void Attack() {
 		
-        body.linearVelocity = input.normalized * speed;
-		spriteRenderer.sortingOrder = Mathf.RoundToInt( -transform.position.y * 10 );
+		if( !waitingAttack && Input.GetKeyDown(KeyCode.Space) && attack != "" ) {
+			
+			waitingAttack = true;
+			
+			animator.SetTrigger( attack );
+			
+			StartCoroutine(DelayAttack());
 		
-    }
-
+		}
+		
+	}
+	
+	
+	private IEnumerator DelayAttack() {
+		
+		yield return new WaitForSeconds( 0.6f );
+		
+		Vector3 p = transform.position + new Vector3( direction.x, direction.y, 0f );
+		
+		Instantiate( AttackPrefab, p, Quaternion.identity );
+		
+		waitingAttack = false;
+		
+	}
+	
+	
+	public void takeDamage( int value = 1 ) {
+		
+		health -= value;
+		
+		if( health < 1 ) {
+			
+			Debug.Log("GAME_OVER: Next day?");
+			
+		} else {
+			
+			hud.setHealth( health );
+			
+		}
+		
+		
+	}
+	
+	
+	private void OnCollisionEnter2D(Collision2D collision) {
+		
+		if( collision.gameObject.CompareTag("TownDoor") ) {
+			
+			if( GameData.tvWatched ) {
+				
+				SceneManager.LoadScene("TownScene");
+			
+			} else {
+				
+				hud.writeDialog("É melhor verificar o noticiário antes de sair.");
+				hud.lockDialog();
+				
+			}
+			
+		} else if( collision.gameObject.CompareTag("HouseDoor") ) {
+			
+			SceneManager.LoadScene("HouseScene");
+			
+		} else if( collision.gameObject.CompareTag("PubDoor") ) {
+			
+			hud.writeDialog("Ainda não feito a cena do bar.");
+			
+		} else if( collision.gameObject.CompareTag("WorkDoor") ) {
+			
+			
+			
+		}
+		
+	}
+	
 }
