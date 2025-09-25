@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HouseCombatManager : MonoBehaviour
 {
-   
+	
 	[SerializeField] private GameObject player;
 	[SerializeField] private HudController hud;
 	
@@ -24,14 +24,14 @@ public class HouseCombatManager : MonoBehaviour
 	
 	void Start() {
 		
+		AudioManager audioCtx = AudioManager.GetContext();
+		audioCtx.playCombat();
+		
 		hud.fadeIn();
 		
 		if( GameData.tutorialCombate == false ) {
-			
 			hud.writeDialog("Use Space para atacar.");
-			
 			GameData.tutorialCombate = true;
-			
 		}
 		
 		StartCoroutine(spawner());
@@ -54,6 +54,7 @@ public class HouseCombatManager : MonoBehaviour
 			if( endCombat ) {
 				
 				GameData.houseCleaned = true;
+			//	GameData.health = player.health;
 				
 				hud.fadeOut();
 				SceneManager.LoadScene("HouseScene");

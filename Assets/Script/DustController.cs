@@ -5,9 +5,8 @@ using UnityEngine;
 public class DustController : EnemyMonoBehaviour
 {
    
-	
 	//[SerializeField] 
-	public GameObject player;
+//	public GameObject player;
 	
 	private Animator animator;
 	private Rigidbody2D body;
@@ -16,12 +15,12 @@ public class DustController : EnemyMonoBehaviour
 	
     void Start() {
 		
-        animator = GetComponent<Animator>();
-        body = GetComponent<Rigidbody2D>();
-		
 		/// se a referencia ao jogador não for dada, destrua o objeto
 		if( player == null )
 			Destroy( gameObject );
+		
+        animator = GetComponent<Animator>();
+        body = GetComponent<Rigidbody2D>();
 		
     }
 	
@@ -32,7 +31,6 @@ public class DustController : EnemyMonoBehaviour
 			knockTimer -= Time.fixedDeltaTime;
 			return;
 		}
-		
 		
 		///
 		Vector3 dir = (player.transform.position - transform.position).normalized;
@@ -68,8 +66,9 @@ public class DustController : EnemyMonoBehaviour
 		
 	}
 	
-	
-	private void OnTriggerEnter2D( Collider2D collider ) {
+	/*
+//	private void OnTriggerEnter2D( Collider2D collider ) {
+	private void OnTriggerStay2D( Collider2D collider ) {
 		
 		PlayerController target = collider.GetComponent<PlayerController>();
 		
@@ -77,5 +76,6 @@ public class DustController : EnemyMonoBehaviour
 			target.takeDamage();
 		
 	}
+	*/
 	
 }

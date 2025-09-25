@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 	
-	private int health = 100;
+	//public int health = 100;
 	
 	[SerializeField] private HudController hud;
 	
@@ -29,15 +29,19 @@ public class PlayerController : MonoBehaviour
 	
     void Start() {
 		
+		//health = GameData.health;
+		
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		
 		/// 
 	//	animator.SetFloat("x", -1f);
-    //   animator.SetFloat("y", -1f);
+    //  animator.SetFloat("y", -1f);
 		
 	//	Time.timeScale = .5f;
+		
+		hud.setHealth( GameData.health );
 		
     }
 
@@ -120,15 +124,16 @@ public class PlayerController : MonoBehaviour
 	
 	public void takeDamage( int value = 1 ) {
 		
-		health -= value;
+		GameData.health -= value;
 		
-		if( health < 1 ) {
+		if( GameData.health < 1 ) {
 			
-			Debug.Log("GAME_OVER: Next day?");
+			Debug.Log("Next day?");
+			Time.timeScale = 0.0001f;
 			
 		} else {
 			
-			hud.setHealth( health );
+			hud.setHealth( GameData.health );
 			
 		}
 		
@@ -157,7 +162,7 @@ public class PlayerController : MonoBehaviour
 			
 		} else if( collision.gameObject.CompareTag("PubDoor") ) {
 			
-			hud.writeDialog("Ainda não feito a cena do bar.");
+			SceneManager.LoadScene("PubScene");
 			
 		} else if( collision.gameObject.CompareTag("WorkDoor") ) {
 			

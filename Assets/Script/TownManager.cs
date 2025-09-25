@@ -7,9 +7,10 @@ public class TownManager : MonoBehaviour
 	
 	void Start() {
 		
+		AudioManager audioCtx = AudioManager.GetContext();
+		audioCtx.playLoop();
 		hud.fadeIn();
 		
-        
     }
 	
 	

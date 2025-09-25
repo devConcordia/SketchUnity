@@ -4,6 +4,9 @@
 public static class GameData {
 	
 	
+	///
+	public static int health = 100;
+	
 	/// referencia dos alvos para exibir no mapa
 	public const int FRIEND = 1;
 	public const int PUB = 2;
@@ -12,9 +15,7 @@ public static class GameData {
 	/// alvo atual
 	public static int targetMap = 0;
 	
-	
-	//public static int health = 100;
-	
+	///
 	public static bool tutorial = false;
 	public static bool tutorialCombate = false;
 	
@@ -27,9 +28,6 @@ public static class GameData {
 	
 	
 	public static void reset() {
-		
-		
-		
 		
 	}
 	

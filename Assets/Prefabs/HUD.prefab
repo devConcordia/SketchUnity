@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3736494456635812228}
   - component: {fileID: 4044486277833878092}
   m_Layer: 0
-  m_Name: ScreenLayer
+  m_Name: MaskLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthText: {fileID: 2604222917377935507}
   dialogText: {fileID: 4395197412408536754}
-  screenLayer: {fileID: 4044486277833878092}
+  maskLayer: {fileID: 4044486277833878092}
 --- !u!1 &7648521044850934715
 GameObject:
   m_ObjectHideFlags: 0

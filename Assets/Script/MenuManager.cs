@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
  */
 public class MenuManager : MonoBehaviour {
 	
+	void Start() {
+		
+		AudioManager.instance.playMenu();
+		
+	}
+	
 	public void startGame() {
 		
 		GameData.reset();

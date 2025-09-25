@@ -15,7 +15,7 @@ public class HudController : MonoBehaviour {
 	[SerializeField] private TMP_Text dialogText;
 	
 	///
-	[SerializeField] private SpriteRenderer screenLayer;
+	[SerializeField] private SpriteRenderer maskLayer;
     
 	private InputAction action;
 	private Queue<string> messages = new Queue<string>(); 
@@ -26,6 +26,17 @@ public class HudController : MonoBehaviour {
 	private bool dialogLocked = false;
 	
 	
+	public void FixedUpdate() {
+		
+		if( maskLayer != null && Camera.main != null ) {
+			
+            Vector3 camera = Camera.main.transform.position;
+
+            maskLayer.transform.position = new Vector3(camera.x, camera.y, maskLayer.transform.position.z);
+        
+		}
+		
+	}
 	
 	
 	public void setHealth( int value ) {
@@ -69,34 +80,18 @@ public class HudController : MonoBehaviour {
 	
 	
 	
-	private void alignScreenLayer() {
-		
-		if( screenLayer != null && Camera.main != null ) {
-			
-            Vector3 camera = Camera.main.transform.position;
-
-            screenLayer.transform.position = new Vector3(camera.x, camera.y, screenLayer.transform.position.z);
-        
-		}
-		
-	}
-	
 	public void fadeIn() {
 		
-		alignScreenLayer();
-		
-		screenLayer.color = new Color(0f,0f,0f,1f);
-		screenLayer.gameObject.SetActive( true );
+		maskLayer.color = new Color(0f,0f,0f,1f);
+		maskLayer.gameObject.SetActive( true );
 		StartCoroutine( fade( 1f, 0f, true ) );
 		
 	}
 	
 	public void fadeOut() {
 		
-		alignScreenLayer();
-		
-		screenLayer.color = new Color(0f,0f,0f,0f);
-		screenLayer.gameObject.SetActive( true );
+		maskLayer.color = new Color(0f,0f,0f,0f);
+		maskLayer.gameObject.SetActive( true );
 		StartCoroutine( fade( 0f, 1f ) );
 		
 	}
@@ -107,16 +102,16 @@ public class HudController : MonoBehaviour {
 		
 		for( int i = 0; i < 10; i++ ) {
 			
-			Color color = screenLayer.color;
+			Color color = maskLayer.color;
 			color.a += step;
-			screenLayer.color = color;
+			maskLayer.color = color;
 			
             yield return new WaitForSeconds(0.05f);
 			
 		}
 		
 		if( disable )
-			screenLayer.gameObject.SetActive( false );
+			maskLayer.gameObject.SetActive( false );
 		
 	}
 	
