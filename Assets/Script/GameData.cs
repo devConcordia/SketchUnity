@@ -1,8 +1,5 @@
 
-//using UnityEngine;
-
 public static class GameData {
-	
 	
 	///
 	public static int health = 100;
@@ -25,9 +22,28 @@ public static class GameData {
 	public static bool houseCleaned = false;
 	
 	
-	
+	public static void nextDay() {
+		
+		///
+		day++;
+		
+		/// health volta sempre menor
+		health = (int) (100f * day/10f);
+		
+	}
 	
 	public static void reset() {
+		
+		health = 100;
+		targetMap = 0;
+		
+		tutorial = false;
+		tutorialCombate = false;
+		
+		day = 1;
+		
+		tvWatched = false;
+		houseCleaned = false;
 		
 	}
 	

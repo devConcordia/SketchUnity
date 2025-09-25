@@ -12,17 +12,18 @@ public class HouseManager : MonoBehaviour {
 		
 		hud.fadeIn();
 		
-		
 		if( GameData.houseCleaned ) {
+			
 			dirtObjects.SetActive( false );
+			
 		}
-		
 		
 		///
 		switch( GameData.day ) {
 			case 1: dayOne(); break;
 			case 2: dayTwo(); break;
-			case 3: dayThree(); break;
+			
+			default: dayThreeOrMore(); break;
 		}
 		
 	}
@@ -42,9 +43,11 @@ public class HouseManager : MonoBehaviour {
 	
 	void dayTwo() {
 		
+		hud.writeDialog("... Hoje é minha folga.");
+		
 	}
 	
-	void dayThree() {
+	void dayThreeOrMore() {
 		
 	}
 	

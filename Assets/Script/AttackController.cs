@@ -7,7 +7,7 @@ public class AttackController : MonoBehaviour
 {
     
 	///
-	[SerializeField] public float timeToDestroy = 5f;
+	[SerializeField] public float timeToDestroy = 1f;
 	[SerializeField] public int damage = 1;
 	
     void Start() {

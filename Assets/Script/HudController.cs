@@ -13,6 +13,7 @@ public class HudController : MonoBehaviour {
 	///
 	[SerializeField] private TMP_Text healthText;
 	[SerializeField] private TMP_Text dialogText;
+	[SerializeField] private TMP_Text countdownText;
 	
 	///
 	[SerializeField] private SpriteRenderer maskLayer;
@@ -24,6 +25,8 @@ public class HudController : MonoBehaviour {
 	/// para evitar misturar dialagos e repetir mesmos eventos
 	/// sempre muda para false quando termina a exibição de uma fila de mensagens
 	private bool dialogLocked = false;
+	
+	private bool writing = false;
 	
 	
 	public void FixedUpdate() {
@@ -45,6 +48,21 @@ public class HudController : MonoBehaviour {
 		
 	}
 	
+	public void setCountdown( int value ) {
+		
+	//	if( !countdownText.transform.parent.gameObject.activeSelf )
+		if( !countdownText.activeInHierarchy )
+			countdownText.transform.parent.gameObject.SetActive( true );
+		
+		countdownText.text = value +" seg";
+		
+	}
+	
+	/** 
+	 *	
+	 *	não add novos textos a messages
+	 *	
+	 */
 	public void lockDialog() {
 		
 		dialogLocked = true;
@@ -53,7 +71,7 @@ public class HudController : MonoBehaviour {
 	
 	public void writeDialog( string message ) {
 		
-		if( dialogText.text != "" ) {
+		if( writing ) {
 			
 			if( !dialogLocked )
 				messages.Enqueue( message );
@@ -71,51 +89,16 @@ public class HudController : MonoBehaviour {
 	
     private IEnumerator writeDialogText( string message ) {
 		
+		writing = true;
+		
         foreach( char m in message.ToCharArray() ) {
             dialogText.text += m;
             yield return new WaitForSeconds(0.01f);
         }
 		
+		writing = false;
+		
     }
-	
-	
-	
-	public void fadeIn() {
-		
-		maskLayer.color = new Color(0f,0f,0f,1f);
-		maskLayer.gameObject.SetActive( true );
-		StartCoroutine( fade( 1f, 0f, true ) );
-		
-	}
-	
-	public void fadeOut() {
-		
-		maskLayer.color = new Color(0f,0f,0f,0f);
-		maskLayer.gameObject.SetActive( true );
-		StartCoroutine( fade( 0f, 1f ) );
-		
-	}
-	
-	private IEnumerator fade( float a, float b, bool disable = false ) {
-		
-		float step = (b - a) / 10f;
-		
-		for( int i = 0; i < 10; i++ ) {
-			
-			Color color = maskLayer.color;
-			color.a += step;
-			maskLayer.color = color;
-			
-            yield return new WaitForSeconds(0.05f);
-			
-		}
-		
-		if( disable )
-			maskLayer.gameObject.SetActive( false );
-		
-	}
-	
-	
 	
 	
     private void OnKeyPressed(InputAction.CallbackContext context) {
@@ -160,6 +143,45 @@ public class HudController : MonoBehaviour {
         action.Disable();
 		
     }
+	
+	
+	
+	
+	
+	public void fadeIn() {
+		
+		maskLayer.color = new Color(0f,0f,0f,1f);
+		maskLayer.gameObject.SetActive( true );
+		StartCoroutine( fade( 1f, 0f, true ) );
+		
+	}
+	
+	public void fadeOut() {
+		
+		maskLayer.color = new Color(0f,0f,0f,0f);
+		maskLayer.gameObject.SetActive( true );
+		StartCoroutine( fade( 0f, 1f ) );
+		
+	}
+	
+	private IEnumerator fade( float a, float b, bool disable = false ) {
+		
+		float step = (b - a) / 10f;
+		
+		for( int i = 0; i < 10; i++ ) {
+			
+			Color color = maskLayer.color;
+			color.a += step;
+			maskLayer.color = color;
+			
+            yield return new WaitForSeconds(0.05f);
+			
+		}
+		
+		if( disable )
+			maskLayer.gameObject.SetActive( false );
+		
+	}
 	
 	
 }

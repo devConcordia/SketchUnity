@@ -8,6 +8,7 @@ TagManager:
   - HouseDoor
   - WorkDoor
   - PubDoor
+  - Drain
   layers:
   - Default
   - TransparentFX

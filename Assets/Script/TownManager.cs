@@ -4,15 +4,23 @@ public class TownManager : MonoBehaviour
 {
     
 	[SerializeField] private HudController hud;
+	[SerializeField] private GameObject bordersDayTwo;
 	
 	void Start() {
 		
+		hud.fadeIn();
 		AudioManager audioCtx = AudioManager.GetContext();
 		audioCtx.playLoop();
-		hud.fadeIn();
+		
+		///
+		switch( GameData.day ) {
+			case 1: dayOne(); break;
+			case 2: dayTwo(); break;
+			
+			default: dayThreeOrMore(); break;
+		}
 		
     }
-	
 	
 	void dayOne() {
 		
@@ -22,7 +30,7 @@ public class TownManager : MonoBehaviour
 		
 	}
 	
-	void dayThree() {
+	void dayThreeOrMore() {
 		
 	}
 	

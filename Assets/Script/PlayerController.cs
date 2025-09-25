@@ -29,18 +29,11 @@ public class PlayerController : MonoBehaviour
 	
     void Start() {
 		
-		//health = GameData.health;
-		
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		
 		/// 
-	//	animator.SetFloat("x", -1f);
-    //  animator.SetFloat("y", -1f);
-		
-	//	Time.timeScale = .5f;
-		
 		hud.setHealth( GameData.health );
 		
     }
@@ -108,7 +101,6 @@ public class PlayerController : MonoBehaviour
 		
 	}
 	
-	
 	private IEnumerator DelayAttack() {
 		
 		yield return new WaitForSeconds( 0.6f );
@@ -121,6 +113,14 @@ public class PlayerController : MonoBehaviour
 		
 	}
 	
+	public void endDay() {
+		
+		hud.fadeOut();
+		GameData.nextDay();
+		
+		SceneManager.LoadScene("HouseScene");
+		
+	}
 	
 	public void takeDamage( int value = 1 ) {
 		
@@ -128,8 +128,7 @@ public class PlayerController : MonoBehaviour
 		
 		if( GameData.health < 1 ) {
 			
-			Debug.Log("Next day?");
-			Time.timeScale = 0.0001f;
+			endDay();
 			
 		} else {
 			
@@ -137,6 +136,13 @@ public class PlayerController : MonoBehaviour
 			
 		}
 		
+	}
+	
+	public void goToWork() {
+		
+	//	GoToWork go = new GoToWork( gameObject );
+		
+	//	( countdown );
 		
 	}
 	

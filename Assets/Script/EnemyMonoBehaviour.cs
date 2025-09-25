@@ -28,7 +28,6 @@ public class EnemyMonoBehaviour : MonoBehaviour {
 		
 	}
 	
-	
 //	private void OnTriggerEnter2D( Collider2D collider ) {
 	private void OnTriggerStay2D( Collider2D collider ) {
 		
