@@ -9,6 +9,7 @@ public class BeerController : EnemyMonoBehaviour
    
 	///
 //	[SerializeField] private GameObject[] beerStylesPrefab;
+	[SerializeField] private GameObject balloon;
 	[SerializeField] private RuntimeAnimatorController[] animators;
 	
 	
@@ -58,7 +59,21 @@ public class BeerController : EnemyMonoBehaviour
 		
 		knockTimer = 2f;
 		
+		if( Random.Range(0f,1f) < .25 ) 
+			StartCoroutine( ShowBallon() );
+		
 	}
+	
+	private IEnumerator ShowBallon() {
+		
+		balloon.SetActive(true);
+		
+        yield return new WaitForSeconds( 3f );
+		
+		balloon.SetActive(false);
+		
+	}
+	
 	
 	public override void onDestroy() {
 		

@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: c3d2aee44324ff240a3e2a161547acbd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4897310609787584221
+    second: taquinho_0
+  - first:
+      213: 899387469861329357
+    second: taquinho_1
+  - first:
+      213: 5728272926309567277
+    second: taquinho_2
+  - first:
+      213: -1149198716686418227
+    second: taquinho_3
+  - first:
+      213: 1414213151206119124
+    second: taquinho_4
+  - first:
+      213: -1240376360792381205
+    second: taquinho_5
+  - first:
+      213: -925026630695669127
+    second: taquinho_6
+  - first:
+      213: 4573798319134131301
+    second: taquinho_7
+  - first:
+      213: -6992556891597761299
+    second: taquinho_8
+  - first:
+      213: 2528010264140441472
+    second: taquinho_9
+  - first:
+      213: -3707020471515849932
+    second: taquinho_10
+  - first:
+      213: -7893769753463048890
+    second: taquinho_11
+  - first:
+      213: 5516137577570650837
+    second: taquinho_12
+  - first:
+      213: -1390385173289583253
+    second: taquinho_13
+  - first:
+      213: -4902828734514644153
+    second: taquinho_14
+  - first:
+      213: -5726622587364894394
+    second: taquinho_15
+  - first:
+      213: -3965984774041402027
+    second: taquinho_16
+  - first:
+      213: 840945352681456264
+    second: taquinho_17
+  - first:
+      213: -8332873103941901734
+    second: taquinho_18
+  - first:
+      213: -4217259584978478638
+    second: taquinho_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: taquinho_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 61
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddef3237d0eb6f340800000000000000
+      internalID: 4897310609787584221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 61
+        width: 25
+        height: 29
+      alignment: 9
+      pivot: {x: 0.24272858, y: 0.48767853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9958083244b7c00800000000000000
+      internalID: 899387469861329357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 61
+        width: 21
+        height: 26
+      alignment: 9
+      pivot: {x: 0.29581597, y: 0.51374316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b4b2570e9ee7f40800000000000000
+      internalID: 5728272926309567277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 61
+        width: 17
+        height: 30
+      alignment: 9
+      pivot: {x: 0.39490464, y: 0.52382123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce329b1bd93d00f0800000000000000
+      internalID: -1149198716686418227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 60
+        width: 14
+        height: 35
+      alignment: 9
+      pivot: {x: 0.4999989, y: 0.47958156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d693524e5b40a310800000000000000
+      internalID: 1414213151206119124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_5
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 59
+        width: 29
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6601778, y: 0.4623873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8ad2b854c49cee0800000000000000
+      internalID: -1240376360792381205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 59
+        width: 27
+        height: 36
+      alignment: 9
+      pivot: {x: 0.26178545, y: 0.430521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972bb9d2e25a923f0800000000000000
+      internalID: -925026630695669127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 59
+        width: 29
+        height: 31
+      alignment: 9
+      pivot: {x: 0.29053575, y: 0.49999976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564c4469655697f30800000000000000
+      internalID: 4573798319134131301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_8
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 59
+        width: 28
+        height: 29
+      alignment: 9
+      pivot: {x: 0.29581562, y: 0.52464294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de41b942e8275fe90800000000000000
+      internalID: -6992556891597761299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_9
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 59
+        width: 27
+        height: 29
+      alignment: 9
+      pivot: {x: 0.3279566, y: 0.5369644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087e1a6f0fb451320800000000000000
+      internalID: 2528010264140441472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 22
+        height: 29
+      alignment: 9
+      pivot: {x: 0.62993497, y: 0.5369643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b523495840e8cc0800000000000000
+      internalID: -3707020471515849932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 28
+        height: 29
+      alignment: 9
+      pivot: {x: 0.72970635, y: 0.54928577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645bc127b32b37290800000000000000
+      internalID: -7893769753463048890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 0
+        width: 29
+        height: 31
+      alignment: 9
+      pivot: {x: 0.70946395, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da484ba6e14d8c40800000000000000
+      internalID: 5516137577570650837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 27
+        height: 36
+      alignment: 9
+      pivot: {x: 0.6720434, y: 0.4305209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dba1d2d0c54bce0800000000000000
+      internalID: -1390385173289583253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_14
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 29
+        height: 38
+      alignment: 9
+      pivot: {x: 0.3274994, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b3da40e37a5fbb0800000000000000
+      internalID: -4902828734514644153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1
+        width: 14
+        height: 35
+      alignment: 9
+      pivot: {x: 0.4999989, y: 0.4795819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64913650913f680b0800000000000000
+      internalID: -5726622587364894394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2
+        width: 17
+        height: 30
+      alignment: 9
+      pivot: {x: 0.58407414, y: 0.5238217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55587a65cddf5f8c0800000000000000
+      internalID: -3965984774041402027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_17
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 2
+        width: 21
+        height: 26
+      alignment: 9
+      pivot: {x: 0.6531372, y: 0.50000036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882081eb753abab00800000000000000
+      internalID: 840945352681456264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_18
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 2
+        width: 25
+        height: 29
+      alignment: 9
+      pivot: {x: 0.71439207, y: 0.4876786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52e229bf00bb5c80800000000000000
+      internalID: -8332873103941901734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taquinho_19
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 2
+        width: 13
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4175415, y: 0.4857072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d91fbf50c84975c0800000000000000
+      internalID: -4217259584978478638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3bf96b8b47300f24c86d3050c7e01a26
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      taquinho_0: 4897310609787584221
+      taquinho_1: 899387469861329357
+      taquinho_10: -3707020471515849932
+      taquinho_11: -7893769753463048890
+      taquinho_12: 5516137577570650837
+      taquinho_13: -1390385173289583253
+      taquinho_14: -4902828734514644153
+      taquinho_15: -5726622587364894394
+      taquinho_16: -3965984774041402027
+      taquinho_17: 840945352681456264
+      taquinho_18: -8332873103941901734
+      taquinho_19: -4217259584978478638
+      taquinho_2: 5728272926309567277
+      taquinho_3: -1149198716686418227
+      taquinho_4: 1414213151206119124
+      taquinho_5: -1240376360792381205
+      taquinho_6: -925026630695669127
+      taquinho_7: 4573798319134131301
+      taquinho_8: -6992556891597761299
+      taquinho_9: 2528010264140441472
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
