@@ -16,7 +16,7 @@ public static class GameData {
 	public static bool tutorial = false;
 	public static bool tutorialCombate = false;
 	
-	public static int day = 1;
+	public static int day = 2;
 	
 	public static bool tvWatched = false;
 	public static bool houseCleaned = false;
@@ -27,8 +27,12 @@ public static class GameData {
 		///
 		day++;
 		
+		double percent = (day > 2)? .50 : .75;
+		
 		/// health volta sempre menor
-		health = (int) (100f * day/10f);
+		health = (int) (100f * percent);
+		
+		houseCleaned = false;
 		
 	}
 	

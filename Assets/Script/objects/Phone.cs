@@ -48,6 +48,11 @@ public class Phone : MonoBehaviour, IInteractable {
 			
 			GameData.targetMap = GameData.WORK;
 			
+			///
+		//	GoToWorkController toWork = GameObject.Find("GoToWork").GetComponent<GoToWorkController>();
+			
+			GoToWorkController.StartCountdown();
+			
 		}
 		
 	}

@@ -5,6 +5,7 @@ public class TownManager : MonoBehaviour
     
 	[SerializeField] private HudController hud;
 	[SerializeField] private GameObject bordersDayTwo;
+	[SerializeField] private GameObject bordersDayThree;
 	
 	void Start() {
 		
@@ -28,9 +29,13 @@ public class TownManager : MonoBehaviour
 	
 	void dayTwo() {
 		
+		bordersDayTwo.SetActive(true);
+		
 	}
 	
 	void dayThreeOrMore() {
+		
+		bordersDayThree.SetActive(true);
 		
 	}
 	

@@ -11,6 +11,7 @@ using UnityEngine.InputSystem;
 public class HudController : MonoBehaviour {
     
 	///
+	[SerializeField] private TMP_Text helperText;
 	[SerializeField] private TMP_Text healthText;
 	[SerializeField] private TMP_Text dialogText;
 	[SerializeField] private TMP_Text countdownText;
@@ -48,10 +49,16 @@ public class HudController : MonoBehaviour {
 		
 	}
 	
+	public void setHelper( string text ) {
+		
+		helperText.text = text;
+		
+	}
+	
 	public void setCountdown( int value ) {
 		
-	//	if( !countdownText.transform.parent.gameObject.activeSelf )
-		if( !countdownText.activeInHierarchy )
+		//if( !countdownText.transform.parent.gameObject.activeSelf )
+		if( !countdownText.gameObject.activeInHierarchy )
 			countdownText.transform.parent.gameObject.SetActive( true );
 		
 		countdownText.text = value +" seg";

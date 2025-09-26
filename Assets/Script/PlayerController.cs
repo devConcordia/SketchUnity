@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
 		
 		/// 
 		hud.setHealth( GameData.health );
+		hud.setHelper( "Dia "+ GameData.day );
 		
     }
 
@@ -135,14 +136,6 @@ public class PlayerController : MonoBehaviour
 			hud.setHealth( GameData.health );
 			
 		}
-		
-	}
-	
-	public void goToWork() {
-		
-	//	GoToWork go = new GoToWork( gameObject );
-		
-	//	( countdown );
 		
 	}
 	

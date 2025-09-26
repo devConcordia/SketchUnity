@@ -33,7 +33,7 @@ public class EnemyMonoBehaviour : MonoBehaviour {
 		
 		PlayerController target = collider.GetComponent<PlayerController>();
 		
-		if( target != null && counterToDamage++ > 10 ) { 
+		if( target != null && counterToDamage++ > 5 ) { 
 			counterToDamage = 0;
 			target.takeDamage();
 		}

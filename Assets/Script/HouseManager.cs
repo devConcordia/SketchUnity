@@ -4,6 +4,7 @@ public class HouseManager : MonoBehaviour {
     
 	[SerializeField] private HudController hud;
 	[SerializeField] private GameObject dirtObjects;
+	[SerializeField] private GameObject dirtObjects2;
 	
 	void Start() {
 		
@@ -43,7 +44,15 @@ public class HouseManager : MonoBehaviour {
 	
 	void dayTwo() {
 		
-		hud.writeDialog("... Hoje é minha folga.");
+		//hud.writeDialog("... Hoje é minha folga.");
+		
+		if( !GameData.houseCleaned ) {
+			
+			dirtObjects2.SetActive( true );
+			
+		}
+		
+		
 		
 	}
 	

@@ -431,6 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hud: {fileID: 4541089126190260687}
   dirtObjects: {fileID: 657818253}
+  dirtObjects2: {fileID: 1316840615}
 --- !u!4 &914618426
 Transform:
   m_ObjectHideFlags: 0
@@ -446,6 +447,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1316840615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4243828945569190469, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+  m_PrefabInstance: {fileID: 657818252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1617472511
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +632,10 @@ PrefabInstance:
     - target: {fileID: 931552940759728359, guid: 7de65675e4370dd45975a2d3040ebf3b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257348217351334731, guid: 7de65675e4370dd45975a2d3040ebf3b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -199.37354
       objectReference: {fileID: 0}
     - target: {fileID: 2939433095836616903, guid: 7de65675e4370dd45975a2d3040ebf3b, type: 3}
       propertyPath: m_Camera
