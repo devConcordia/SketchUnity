@@ -8,11 +8,14 @@ public class Phone : MonoBehaviour, IInteractable {
 	
     virtual public void interact() {
 		
+		/// não toca mais os audios do telefone durante esse dia
+		GameData.phone = true;
+		
 		///
 		switch( GameData.day ) {
 			case 1: dayOne(); break;
 			case 2: dayTwo(); break;
-			case 3: dayThree(); break;
+			default: dayThreeOrMore(); break;
 		}
 		
 	}
@@ -49,17 +52,20 @@ public class Phone : MonoBehaviour, IInteractable {
 			GameData.targetMap = GameData.WORK;
 			
 			///
-		//	GoToWorkController toWork = GameObject.Find("GoToWork").GetComponent<GoToWorkController>();
-			
+			/// inicia a contagem regressiva
+			///	o objeto criado não será destruido em mudanças de cenas
+			///
 			GoToWorkController.StartCountdown();
 			
 		}
 		
 	}
 	
-	void dayThree() {
+	void dayThreeOrMore() {
+		
+		hud.writeDialog("Olá, preciso de ajuda ...");
+		hud.writeDialog("Fim de jogo!");
 		
 	}
-	
 	
 }

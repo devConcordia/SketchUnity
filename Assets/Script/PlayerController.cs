@@ -20,8 +20,10 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private GameObject AttackPrefab;
 	
 	[SerializeField] private float speed = 5;
+	[SerializeField] private float timeChangeScene = 1f;
 	
 	private bool waitingAttack = false;
+	private bool waitingChangeScene = false;
 	
 	private SpriteRenderer spriteRenderer;
 	private Animator animator;
@@ -114,26 +116,40 @@ public class PlayerController : MonoBehaviour
 		
 	}
 	
-	public void endDay() {
+	
+	public void changeScene( string sceneName ) {
+		
+		StartCoroutine(DelayChangeScene( sceneName ));
+		
+	}
+	
+	private IEnumerator DelayChangeScene( string sceneName ) {
 		
 		hud.fadeOut();
-		GameData.nextDay();
+		yield return new WaitForSeconds( timeChangeScene );
+		SceneManager.LoadScene( sceneName );
 		
-		SceneManager.LoadScene("HouseScene");
+	}
+	
+	
+	
+	public void endDay() {
+		
+		waitingChangeScene = true;
+		
+		GameData.nextDay();
+		changeScene("HouseScene");
 		
 	}
 	
 	public void takeDamage( int value = 1 ) {
 		
-		GameData.health -= value;
-		
-		if( GameData.health < 1 ) {
+		if( !waitingChangeScene && GameData.health > 0 ) {
 			
-			endDay();
-			
-		} else {
-			
+			GameData.health -= value;
 			hud.setHealth( GameData.health );
+			
+			if( GameData.health < 1 ) endDay();
 			
 		}
 		
@@ -146,7 +162,7 @@ public class PlayerController : MonoBehaviour
 			
 			if( GameData.tvWatched ) {
 				
-				SceneManager.LoadScene("TownScene");
+				changeScene("TownScene");
 			
 			} else {
 				
@@ -157,18 +173,22 @@ public class PlayerController : MonoBehaviour
 			
 		} else if( collision.gameObject.CompareTag("HouseDoor") ) {
 			
-			SceneManager.LoadScene("HouseScene");
+			changeScene("HouseScene");
 			
 		} else if( collision.gameObject.CompareTag("PubDoor") ) {
 			
-			SceneManager.LoadScene("PubScene");
+			changeScene("PubScene");
 			
 		} else if( collision.gameObject.CompareTag("WorkDoor") ) {
 			
-			
+			hud.fadeOut();
+			endDay();
 			
 		}
 		
 	}
+	
+	
+	
 	
 }

@@ -28,6 +28,8 @@ public class HudController : MonoBehaviour {
 	private bool dialogLocked = false;
 	
 	private bool writing = false;
+	private string writingText = "";
+	private Coroutine writingRoutine;
 	
 	
 	public void FixedUpdate() {
@@ -57,7 +59,6 @@ public class HudController : MonoBehaviour {
 	
 	public void setCountdown( int value ) {
 		
-		//if( !countdownText.transform.parent.gameObject.activeSelf )
 		if( !countdownText.gameObject.activeInHierarchy )
 			countdownText.transform.parent.gameObject.SetActive( true );
 		
@@ -78,6 +79,7 @@ public class HudController : MonoBehaviour {
 	
 	public void writeDialog( string message ) {
 		
+		/// adiciona a mensagem a fila, se estiver escrevendo na tela
 		if( writing ) {
 			
 			if( !dialogLocked )
@@ -88,7 +90,9 @@ public class HudController : MonoBehaviour {
 			dialogText.transform.parent.gameObject.SetActive(true);
 			dialogText.text = "";
 			
-			StartCoroutine( writeDialogText( message ) );
+			writingText = message;
+			/// mecanismo para parar a mensagem quando apertar space, e escrever ela toda
+			writingRoutine = StartCoroutine( writeDialogText( message ) );
 			
 		}
 		
@@ -111,22 +115,40 @@ public class HudController : MonoBehaviour {
     private void OnKeyPressed(InputAction.CallbackContext context) {
         
 		if( context.control.displayName == "Space" ) {
-			if( dialogText.text != "" ) {
-					
-				dialogText.text = "";
+			
+			/// verifica se ainda esta sendo escrito na tela
+			/// caso sim, para a coroutine e exibe o texto inteiro
+			if( writing == true ) {
 				
-				if( messages.Count > 0 ) {
-					
-					writeDialog( messages.Dequeue() );
-					
-				} else {
-					
-					dialogLocked = false;
-					dialogText.transform.parent.gameObject.SetActive(false);
+				writing = false;
 				
+				/// para exibição atual
+				StopCoroutine( writingRoutine );
+				
+				/// escreve mensagem inteira
+				dialogText.text = writingText;
+				
+			} else {
+				if( dialogText.text != "" ) {
+					
+					/// apaga ultimo dialago
+					dialogText.text = "";
+					
+					/// verifica se há mensagem na fila para ser exibidas
+					if( messages.Count > 0 ) {
+						
+						writeDialog( messages.Dequeue() );
+						
+					} else {
+						
+						/// encerra dialago
+						dialogLocked = false;
+						dialogText.transform.parent.gameObject.SetActive(false);
+					
+					}
 				}
-				
 			}
+			
 		}
 			
     }
@@ -135,7 +157,7 @@ public class HudController : MonoBehaviour {
         
         action = new InputAction( type: InputActionType.Button );
 
-        // Adiciona várias teclas
+        ///
         action.AddBinding("<Keyboard>/space");
         //action.AddBinding("<Keyboard>/e");
 		
@@ -181,7 +203,7 @@ public class HudController : MonoBehaviour {
 			color.a += step;
 			maskLayer.color = color;
 			
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.1f);
 			
 		}
 		

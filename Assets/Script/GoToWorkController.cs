@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class GoToWorkController : MonoBehaviour
 {
 	
-	private PlayerController player;
+	//private PlayerController player;
 	private HudController hud;
 	
 	public static GoToWorkController instance;
@@ -37,7 +37,7 @@ public class GoToWorkController : MonoBehaviour
 	
     void Start() {
         
-		player = GameObject.Find("Player").GetComponent<PlayerController>();
+	//	player = GameObject.Find("Player").GetComponent<PlayerController>();
 		hud = GameObject.Find("HUD").GetComponent<HudController>();
 		
 		StartCoroutine( Countdown() );
@@ -47,16 +47,16 @@ public class GoToWorkController : MonoBehaviour
 	private IEnumerator Countdown() {
 		
 		for( int i = 60; i > 0; i-- ) {
-			/// quando mudar de cena
-			/// perdera a referencias
+			/// perde a referencia quando mudar de cena
 			if( hud == null ) {
-				player = GameObject.Find("Player").GetComponent<PlayerController>();
 				hud = GameObject.Find("HUD").GetComponent<HudController>();
+			//	player = GameObject.Find("Player").GetComponent<PlayerController>();
 			}
 			hud.setCountdown( i );
 			yield return new WaitForSeconds( 1f );
 		}
 		
+		/*
 		///
 		while( GameData.health > 0 ) {
 			/// na cena da tv, perde a referencia do player
@@ -67,8 +67,10 @@ public class GoToWorkController : MonoBehaviour
 			}
 			player.takeDamage( 1 );
 			yield return new WaitForSeconds( .1f );
-		}
+		}*/
 		
+		
+		GameData.nextDay();
 		///
 		Destroy( gameObject );
 		

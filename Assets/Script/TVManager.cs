@@ -14,30 +14,9 @@ public class TVManager : MonoBehaviour
 		GameData.tvWatched = true;
 		
 		///
-		switch( GameData.day ) {
-			case 1: dayOne(); break;
-			case 2: dayTwo(); break;
-			case 3: dayThree(); break;
-		}
-		
 		hud.writeDialog("[Precisone Space para sair]");
 		
     }
-	
-	
-	void dayOne() {
-		
-	}
-	
-	void dayTwo() {
-		
-	}
-	
-	void dayThree() {
-		
-	}
-	
-	
 	
     private void OnKeyPressed(InputAction.CallbackContext context) {
         

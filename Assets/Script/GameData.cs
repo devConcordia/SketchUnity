@@ -16,7 +16,10 @@ public static class GameData {
 	public static bool tutorial = false;
 	public static bool tutorialCombate = false;
 	
-	public static int day = 2;
+	public static int day = 1;
+	
+	public static bool alarm = false;
+	public static bool phone = false;
 	
 	public static bool tvWatched = false;
 	public static bool houseCleaned = false;
@@ -32,7 +35,10 @@ public static class GameData {
 		/// health volta sempre menor
 		health = (int) (100f * percent);
 		
+		alarm = false;
+		phone = false;
 		houseCleaned = false;
+		targetMap = 0;
 		
 	}
 	

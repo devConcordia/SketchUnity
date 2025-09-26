@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class HouseManager : MonoBehaviour {
@@ -6,6 +8,9 @@ public class HouseManager : MonoBehaviour {
 	[SerializeField] private GameObject dirtObjects;
 	[SerializeField] private GameObject dirtObjects2;
 	
+	[SerializeField] private AudioClip alarmAudioClip;
+	[SerializeField] private AudioClip phoneAudioClip;
+	
 	void Start() {
 		
 		AudioManager audioCtx = AudioManager.GetContext();
@@ -13,11 +18,13 @@ public class HouseManager : MonoBehaviour {
 		
 		hud.fadeIn();
 		
-		if( GameData.houseCleaned ) {
-			
-			dirtObjects.SetActive( false );
-			
+		if( !GameData.alarm ) {
+			GameData.alarm = true;
+			TempSound.Play( alarmAudioClip );
 		}
+		
+		if( GameData.houseCleaned )
+			dirtObjects.SetActive( false );
 		
 		///
 		switch( GameData.day ) {
@@ -40,23 +47,36 @@ public class HouseManager : MonoBehaviour {
 			
 		}
 		
+		if( !GameData.phone )
+			StartCoroutine(DelayPhone(15f));
+		
 	}
 	
 	void dayTwo() {
 		
 		//hud.writeDialog("... Hoje é minha folga.");
 		
-		if( !GameData.houseCleaned ) {
-			
+		if( !GameData.houseCleaned )
 			dirtObjects2.SetActive( true );
-			
-		}
 		
-		
+		if( !GameData.phone )
+			StartCoroutine(DelayPhone(15f));
 		
 	}
 	
 	void dayThreeOrMore() {
+		
+	}
+	
+	private IEnumerator DelayPhone( float delay ) {
+		
+		yield return new WaitForSeconds( delay );
+		
+		if( !GameData.phone ) {
+			TempSound.Play( phoneAudioClip );
+			/// espera e toca novamente
+			StartCoroutine(DelayPhone(20f));
+		}
 		
 	}
 	

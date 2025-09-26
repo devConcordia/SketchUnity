@@ -8,7 +8,8 @@ public class MenuManager : MonoBehaviour {
 	
 	void Start() {
 		
-		AudioManager.instance.playMenu();
+		AudioManager audioCtx = AudioManager.GetContext();
+		audioCtx.playMenu();
 		
 	}
 	

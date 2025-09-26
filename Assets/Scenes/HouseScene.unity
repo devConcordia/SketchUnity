@@ -135,7 +135,15 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 4541089126190260687}
+    - target: {fileID: 865285296872279213, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 4541089126190260687}
     - target: {fileID: 1872084198016213478, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 4541089126190260687}
+    - target: {fileID: 1914801329108487491, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
       propertyPath: hud
       value: 
       objectReference: {fileID: 4541089126190260687}
@@ -143,7 +151,15 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 4541089126190260687}
+    - target: {fileID: 2153086923328544685, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 4541089126190260687}
     - target: {fileID: 3398392113374070096, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 4541089126190260687}
+    - target: {fileID: 4357746665338326617, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
       propertyPath: hud
       value: 
       objectReference: {fileID: 4541089126190260687}
@@ -159,6 +175,10 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 4541089126190260687}
+    - target: {fileID: 5186495113771134245, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 4541089126190260687}
     - target: {fileID: 5377562364984314224, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
       propertyPath: hud
       value: 
@@ -171,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
+    - target: {fileID: 7216982112771867813, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 4541089126190260687}
     - target: {fileID: 7444994319526282489, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
       propertyPath: hud
       value: 
@@ -227,6 +251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8051772123585243771, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 4541089126190260687}
     - target: {fileID: 8198995613686680019, guid: 5a3599ebcf415a14a8d98d71ba3430fa, type: 3}
       propertyPath: hud
       value: 
@@ -432,6 +460,8 @@ MonoBehaviour:
   hud: {fileID: 4541089126190260687}
   dirtObjects: {fileID: 657818253}
   dirtObjects2: {fileID: 1316840615}
+  alarmAudioClip: {fileID: 8300000, guid: 300c3541d75993d4ab6c3b6bc74bb470, type: 3}
+  phoneAudioClip: {fileID: 8300000, guid: 30c3f8e1aea4ba543841f4ccdca05018, type: 3}
 --- !u!4 &914618426
 Transform:
   m_ObjectHideFlags: 0
