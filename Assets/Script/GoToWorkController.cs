@@ -19,6 +19,15 @@ public class GoToWorkController : MonoBehaviour
 		
 	}
 	
+	public static void StopCountdown() {
+		
+		if( instance != null ) {
+			Destroy( instance.gameObject );
+			instance = null;
+		}
+		
+	}
+	
 	private void Awake() {
 		
         if( instance == null ) {
@@ -33,7 +42,6 @@ public class GoToWorkController : MonoBehaviour
 		}
 		
     }
-	
 	
     void Start() {
         

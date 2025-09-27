@@ -14,13 +14,15 @@ public class HudController : MonoBehaviour {
 	[SerializeField] private TMP_Text helperText;
 	[SerializeField] private TMP_Text healthText;
 	[SerializeField] private TMP_Text dialogText;
+	[SerializeField] private TMP_Text confirmText;
+	[SerializeField] private TMP_Text closeText;
 	[SerializeField] private TMP_Text countdownText;
 	
 	///
 	[SerializeField] private SpriteRenderer maskLayer;
     
 	private InputAction action;
-	private Queue<string> messages = new Queue<string>(); 
+	private Queue<string[]> messages = new Queue<string[]>(); 
 	
 	/// lockDialog
 	/// para evitar misturar dialagos e repetir mesmos eventos
@@ -77,13 +79,13 @@ public class HudController : MonoBehaviour {
 		
 	}
 	
-	public void writeDialog( string message ) {
+	public void writeDialog( string message, string closeString = "", string confirmString = "" ) {
 		
 		/// adiciona a mensagem a fila, se estiver escrevendo na tela
 		if( writing ) {
 			
 			if( !dialogLocked )
-				messages.Enqueue( message );
+				messages.Enqueue(new string[] { message, closeString, confirmString });
 			
 		} else {
 		
@@ -92,13 +94,16 @@ public class HudController : MonoBehaviour {
 			
 			writingText = message;
 			/// mecanismo para parar a mensagem quando apertar space, e escrever ela toda
-			writingRoutine = StartCoroutine( writeDialogText( message ) );
+			writingRoutine = StartCoroutine( writeDialogText( message, closeString, confirmString ) );
 			
 		}
 		
 	}
 	
-    private IEnumerator writeDialogText( string message ) {
+    private IEnumerator writeDialogText( string message, string closeString, string confirmString ) {
+		
+		closeText.text = closeString;
+		confirmText.text = confirmString;
 		
 		writing = true;
 		
@@ -137,7 +142,8 @@ public class HudController : MonoBehaviour {
 					/// verifica se há mensagem na fila para ser exibidas
 					if( messages.Count > 0 ) {
 						
-						writeDialog( messages.Dequeue() );
+						string[] texts = messages.Dequeue();
+						writeDialog( texts[0], texts[1], texts[2] );
 						
 					} else {
 						

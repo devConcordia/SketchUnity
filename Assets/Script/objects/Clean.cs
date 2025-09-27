@@ -13,7 +13,7 @@ public class Clean : MonoBehaviour, IInteractable
     virtual public void interact() {
 		
 		waitingAnswer = true;
-		hud.writeDialog("A casa está realmente suja ... \nAperte 'E' para limpar a casa. \nOu 'Space' para ignorar.");
+		hud.writeDialog("A casa está realmente suja ...", "Mais tarde limpo (Space)", "(E) melhor limpar agora");
 		
 	}
 	

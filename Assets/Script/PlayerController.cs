@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 	
 	[SerializeField] private HudController hud;
 	
-	[SerializeField] private string attack = "vassourada";
+	[SerializeField] public string attack = "vassourada";
 	
 	
     private Vector2 input;
@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour
 			
 			} else {
 				
-				hud.writeDialog("É melhor verificar o noticiário antes de sair.");
+				hud.writeDialog("É melhor verificar o noticiário antes de sair.", "Fechar (Space)");
 				hud.lockDialog();
 				
 			}

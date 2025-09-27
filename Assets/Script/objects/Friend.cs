@@ -31,9 +31,9 @@ public class Friend : MonoBehaviour, IInteractable {
 		
 		spoke = true;
 		
-		hud.writeDialog("Finalmente saiu de casa ... faz bastante tempo que não vejo você.");
-		hud.writeDialog("Alguns amigos meus estão num barzinho aqui perto.");
-		hud.writeDialog("O pessoal é legal. Vamos lá tomar alguma coisa");
+		hud.writeDialog("Finalmente saiu de casa ... faz bastante tempo que não vejo você.", "Continuar (Space)");
+		hud.writeDialog("Alguns amigos meus estão num barzinho aqui perto.", "Continuar (Space)");
+		hud.writeDialog("O pessoal é legal. Vamos lá tomar alguma coisa", "Fechar (Space)");
 		
 		///
 		GameData.targetMap = GameData.PUB;

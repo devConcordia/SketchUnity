@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2257348217351334731, guid: 7de65675e4370dd45975a2d3040ebf3b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -234.17511
+      objectReference: {fileID: 0}
     - target: {fileID: 2939433095836616903, guid: 7de65675e4370dd45975a2d3040ebf3b, type: 3}
       propertyPath: m_Camera
       value: 
@@ -259,6 +263,11 @@ PrefabInstance:
 --- !u!4 &517147947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3088073647487654076, guid: 46d45344f6512004a96aca589ca71f73, type: 3}
+  m_PrefabInstance: {fileID: 517147946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &517147948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1351581510467007949, guid: 46d45344f6512004a96aca589ca71f73, type: 3}
   m_PrefabInstance: {fileID: 517147946}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1054677013
@@ -1146,6 +1155,11 @@ MonoBehaviour:
   hud: {fileID: 133311278}
   bordersDayTwo: {fileID: 1189034315}
   bordersDayThree: {fileID: 1189034316}
+  player: {fileID: 517147948}
+  EnemyPrefab:
+  - {fileID: 7689560445698785951, guid: aee766e8d7b2eb145a79b5b89f54745c, type: 3}
+  - {fileID: 8644873444109151410, guid: 6eba4b5311100534c8eda5ae409d0e42, type: 3}
+  initialInterval: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

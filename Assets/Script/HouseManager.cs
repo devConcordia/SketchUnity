@@ -11,6 +11,9 @@ public class HouseManager : MonoBehaviour {
 	[SerializeField] private AudioClip alarmAudioClip;
 	[SerializeField] private AudioClip phoneAudioClip;
 	
+	[SerializeField] private GameObject player;
+	[SerializeField] private GameObject sleepPlayer;
+	
 	void Start() {
 		
 		AudioManager audioCtx = AudioManager.GetContext();
@@ -21,6 +24,10 @@ public class HouseManager : MonoBehaviour {
 		if( !GameData.alarm ) {
 			GameData.alarm = true;
 			TempSound.Play( alarmAudioClip );
+		}
+		
+		if( !GameData.wakeup ) {
+			StartCoroutine( wakeup() );
 		}
 		
 		if( GameData.houseCleaned )
@@ -36,12 +43,41 @@ public class HouseManager : MonoBehaviour {
 		
 	}
 	
+	private IEnumerator wakeup() {
+		
+		float speed = 1f;
+		float delay = 1.5f;
+		
+		if( GameData.day > 2 ) {
+			
+			speed = .6f;
+			
+		} else if( GameData.day > 1 ) {
+			
+			speed = .8f;
+			
+		}
+		
+		sleepPlayer.GetComponent<Animator>().speed = speed;
+		
+		player.SetActive( false );
+		sleepPlayer.SetActive( true );
+		
+		yield return new WaitForSeconds( delay / speed );
+		
+		sleepPlayer.SetActive( false );
+		player.SetActive( true );
+		
+		GameData.wakeup = true;
+		
+	}
+		
 	void dayOne() {
 		
 		if( GameData.tutorial == false ) {
 				
-			hud.writeDialog("Use WASD para se mover.");
-			hud.writeDialog("Use E para interagir com os objetos.");
+			hud.writeDialog("Use WASD para se mover.", "Fechar (Space)");
+			hud.writeDialog("Use E para interagir com os objetos.", "Fechar (Space)");
 			
 			GameData.tutorial = true;
 			
@@ -65,6 +101,8 @@ public class HouseManager : MonoBehaviour {
 	}
 	
 	void dayThreeOrMore() {
+		
+		GoToWorkController.StopCountdown();
 		
 	}
 	

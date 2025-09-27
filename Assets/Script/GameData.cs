@@ -21,6 +21,7 @@ public static class GameData {
 	public static bool alarm = false;
 	public static bool phone = false;
 	
+	public static bool wakeup = false;
 	public static bool tvWatched = false;
 	public static bool houseCleaned = false;
 	
@@ -35,6 +36,7 @@ public static class GameData {
 		/// health volta sempre menor
 		health = (int) (100f * percent);
 		
+		wakeup = false;
 		alarm = false;
 		phone = false;
 		houseCleaned = false;

@@ -26,9 +26,9 @@ public class Phone : MonoBehaviour, IInteractable {
 			
 			answed = true;
 			
-			hud.writeDialog("Oi amigo, faz tempo que não nos vemos ...");
-			hud.writeDialog("Eu estou aqui no parque próximo a sua casa, você não quer dar um pulinho aqui pra conversarmos?");
-			hud.writeDialog("Faz tempo que você não sai de casa. Te espero lá.");
+			hud.writeDialog("Oi amigo, faz tempo que não nos vemos ...", "Continuar (Space)");
+			hud.writeDialog("Eu estou aqui no parque próximo a sua casa, você não quer dar um pulinho aqui pra conversarmos?", "Continuar (Space)");
+			hud.writeDialog("Faz tempo que você não sai de casa. Te espero lá.", "Fechar (Space)");
 			
 			GameData.targetMap = GameData.FRIEND;
 			
