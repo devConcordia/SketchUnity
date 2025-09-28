@@ -40,9 +40,9 @@ public class Phone : MonoBehaviour, IInteractable {
 			
 			answed = true;
 			
-			hud.writeDialog("Oi amigo, faz tempo que não nos vemos ...", "Continuar (Space)");
-			hud.writeDialog("Eu estou aqui no parque próximo a sua casa, você não quer dar um pulinho aqui pra conversarmos?", "Continuar (Space)");
-			hud.writeDialog("Faz tempo que você não sai de casa. Te espero lá.", "Fechar (Space)");
+			hud.writeDialog("Amigo: Oi Alberto, faz tempo que não nos vemos ...", "Continuar (Space)");
+			hud.writeDialog("Amigo: Eu estou aqui no parque próximo a sua casa, você não quer dar um pulinho aqui pra conversarmos?", "Continuar (Space)");
+			hud.writeDialog("Amigo: Faz tempo que você não sai de casa. Te espero lá.", "Fechar (Space)");
 			
 			GameData.targetMap = GameData.FRIEND;
 			GameData.quest = "Encontre seu amigo.";
@@ -50,7 +50,7 @@ public class Phone : MonoBehaviour, IInteractable {
 			
 			/// forçar ver a televisão novamente, para ver a localização
 			/// em caso de ter visto a tv antes do telefone
-			GameData.tvWatched = false;
+		//	GameData.tvWatched = false;
 			
 		}
 		
@@ -62,8 +62,9 @@ public class Phone : MonoBehaviour, IInteractable {
 			
 			answed = true;
 			
-			hud.writeDialog("Bom dia, Fulano não veio hoje.");
-			hud.writeDialog("Não consegui ninguém para cobrir, você vem ajudar a empresa");
+			hud.writeDialog("Chefe: Bom dia, Fulano não veio hoje.");
+			hud.writeDialog("Chefe: Não consegui ninguém para cobrir, você vem ajudar a empresa");
+			hud.writeDialog("Chefe: Não se atrase!");
 			
 			GameData.targetMap = GameData.WORK;
 			GameData.quest = "Vá ao trabalho";
@@ -87,8 +88,8 @@ public class Phone : MonoBehaviour, IInteractable {
 			GameData.bossPhone = false;
 			
 			hud.fadeOut();
-			hud.writeDialog("Caramba, sempre que VOCÊ precisou de ajuda a empresa te ajudou, nunca atrasou salário, tem vale refeição, e quando VOCÊ precisou cuidar da sua mãe a gente até adiantou suas férias ...");
-			hud.writeDialog("... e quando a empresa precisa VOCÊ NÃO PODE AJUDAR, e ainda fala que estava vindo. É como dizem existe colaborador e existe funcionário e VOCÊ não está colaborando com a empresa.");
+			hud.writeDialog("Chefe: Caramba Alberto, sempre que VOCÊ precisou de ajuda a empresa te ajudou, nunca atrasou salário, tem vale refeição, e quando VOCÊ precisou cuidar da sua mãe a gente até adiantou suas férias ...");
+			hud.writeDialog("Chefe: ... e quando a empresa precisa VOCÊ NÃO PODE AJUDAR, e ainda fala que estava vindo. É como dizem existe colaborador e existe funcionário e VOCÊ não está colaborando com a empresa.");
 			
 			nextScene = "HouseScene";
 			countSpaceClick = 0;
@@ -102,7 +103,7 @@ public class Phone : MonoBehaviour, IInteractable {
 		
 		hud.fadeOut();
 		hud.writeDialog("Atendente: Ola, Centro de apoio psicológico, como posso ajudar?");
-		hud.writeDialog("Personagem: Estou passando por uns problemas, gostaria de agendar uma consulta ...");
+		hud.writeDialog("Alberto: Estou passando por uns problemas, gostaria de agendar uma consulta ...");
 		
 		nextScene = "CreditsScene";
 		countSpaceClick = 0;

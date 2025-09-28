@@ -62,7 +62,7 @@ public class BeerController : EnemyMonoBehaviour
 		
 		knockTimer = 2f;
 		
-		if( Random.Range(0f,1f) < .20f ) 
+		if( Random.Range(0f,1f) < .30f ) 
 			StartCoroutine( ShowBallon() );
 		
 	}

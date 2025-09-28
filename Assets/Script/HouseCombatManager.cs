@@ -56,7 +56,8 @@ public class HouseCombatManager : MonoBehaviour
 				GameData.houseCleaned = true;
 			//	GameData.health = player.health;
 				
-				GameData.quest = " ... ";
+				if( GameData.quest == "Limpe a casa" )
+					GameData.quest = " ... ";
 				//hud.setHelper( "Dia "+ GameData.day +" - "+ GameData.quest );
 				
 				hud.fadeOut();

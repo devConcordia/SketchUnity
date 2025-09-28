@@ -89,7 +89,7 @@ public class HouseManager : MonoBehaviour {
 		}
 		
 		if( !GameData.phone )
-			StartCoroutine(DelayPhone(12f));
+			StartCoroutine(DelayPhone(11f));
 		
 	}
 	
@@ -99,7 +99,7 @@ public class HouseManager : MonoBehaviour {
 			dirtObjects2.SetActive( true );
 		
 		if( !GameData.phone )
-			StartCoroutine(DelayPhone(12f));
+			StartCoroutine(DelayPhone(11f));
 		
 	}
 	
@@ -108,10 +108,14 @@ public class HouseManager : MonoBehaviour {
 		GoToWorkController.StopCountdown();
 		
 		if( GameData.bossPhone )
-			StartCoroutine(DelayPhone(12f));
+			StartCoroutine(DelayPhone(11f));
 		
 		if( !GameData.houseCleaned )
 			dirtObjects2.SetActive( true );
+		
+		if( !GameData.bossPhone && GameData.day > 2 ) {
+			StartCoroutine(DelyaTip());
+		}
 		
 	}
 	
@@ -122,8 +126,17 @@ public class HouseManager : MonoBehaviour {
 		if( !GameData.phone ) {
 			sourcePhoneAudio = TempSound.Play( phoneAudioClip );
 			/// espera e toca novamente
-			StartCoroutine(DelayPhone(20f));
+			StartCoroutine(DelayPhone(16f));
 		}
+		
+	}
+	
+	private IEnumerator DelyaTip() {
+		
+		yield return new WaitForSeconds(15f);
+		
+		hud.writeDialog("O telefone não tocou hoje ...", "Fechar (Space)");
+		StartCoroutine(DelyaTip());
 		
 	}
 	
