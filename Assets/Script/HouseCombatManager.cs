@@ -56,6 +56,9 @@ public class HouseCombatManager : MonoBehaviour
 				GameData.houseCleaned = true;
 			//	GameData.health = player.health;
 				
+				GameData.quest = " ... ";
+				//hud.setHelper( "Dia "+ GameData.day +" - "+ GameData.quest );
+				
 				hud.fadeOut();
 				SceneManager.LoadScene("HouseScene");
 			

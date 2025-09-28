@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PubManager : MonoBehaviour
 {
@@ -33,7 +34,26 @@ public class PubManager : MonoBehaviour
 			GameData.tutorialCombate = true;
 		}
 		
-		StartCoroutine(spawner());
+		GameData.quest = "Sobreviva ao Happy Hour";
+		hud.setHelper( "Dia "+ GameData.day +" - "+ GameData.quest );
+			
+		StartCoroutine( spawner() );
+		StartCoroutine( Countdown() );
+		
+    }
+	
+	private IEnumerator Countdown() {
+		
+		for( int i = 30; i > 0; i-- ) {
+			hud.setCountdown( i );
+			yield return new WaitForSeconds( 1f );
+		}
+		
+		GameData.nextDay();
+		SceneManager.LoadScene( "HouseScene" );
+		
+		///
+		Destroy( gameObject );
 		
 	}
 	

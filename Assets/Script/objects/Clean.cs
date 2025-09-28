@@ -10,6 +10,13 @@ public class Clean : MonoBehaviour, IInteractable
 	private InputAction action;
 	private bool waitingAnswer = false;
 	
+	void Start() {
+		
+		if( !hud )
+			hud = GameObject.Find("HUD").GetComponent<HudController>();
+		
+	}
+	
     virtual public void interact() {
 		
 		waitingAnswer = true;

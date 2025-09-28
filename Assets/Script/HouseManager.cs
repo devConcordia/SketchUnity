@@ -30,8 +30,11 @@ public class HouseManager : MonoBehaviour {
 			StartCoroutine( wakeup() );
 		}
 		
-		if( GameData.houseCleaned )
+		if( GameData.houseCleaned ) {
+			
 			dirtObjects.SetActive( false );
+			
+		}
 		
 		///
 		switch( GameData.day ) {
@@ -90,8 +93,6 @@ public class HouseManager : MonoBehaviour {
 	
 	void dayTwo() {
 		
-		//hud.writeDialog("... Hoje é minha folga.");
-		
 		if( !GameData.houseCleaned )
 			dirtObjects2.SetActive( true );
 		
@@ -103,6 +104,9 @@ public class HouseManager : MonoBehaviour {
 	void dayThreeOrMore() {
 		
 		GoToWorkController.StopCountdown();
+		
+		if( GameData.bossPhone )
+			StartCoroutine(DelayPhone(15f));
 		
 		if( !GameData.houseCleaned )
 			dirtObjects2.SetActive( true );

@@ -3,6 +3,7 @@ public static class GameData {
 	
 	///
 	public static int health = 100;
+	public static float saturation = -20;
 	
 	/// referencia dos alvos para exibir no mapa
 	public const int FRIEND = 1;
@@ -16,14 +17,18 @@ public static class GameData {
 	public static bool tutorial = false;
 	public static bool tutorialCombate = false;
 	
-	public static int day = 2;
+	public static int day = 1;
+	
+	public static int killEnemiesCount = 0;
 	
 	public static bool alarm = false;
 	public static bool phone = false;
 	
+	public static bool bossPhone = false;
 	public static bool wakeup = false;
 	public static bool tvWatched = false;
 	public static bool houseCleaned = false;
+	public static string quest = "Limpe a casa";
 	
 	
 	public static void nextDay() {
@@ -42,6 +47,18 @@ public static class GameData {
 		houseCleaned = false;
 		tvWatched = false;
 		targetMap = 0;
+		quest = "Limpe a casa";
+		
+		
+		if( day > 2 ) {
+			
+			saturation = -60f;
+			
+		} else {
+			
+			saturation = -40f;
+			
+		}
 		
 	}
 	
@@ -54,9 +71,11 @@ public static class GameData {
 		tutorialCombate = false;
 		
 		day = 1;
+		killEnemiesCount = 1;
 		
 		tvWatched = false;
 		houseCleaned = false;
+		bossPhone = false;
 		
 	}
 	

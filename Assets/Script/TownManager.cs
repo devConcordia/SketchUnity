@@ -37,8 +37,9 @@ public class TownManager : MonoBehaviour
 	
 	void dayTwo() {
 		
+		hud.showRain();
 		bordersDayTwo.SetActive(true);
-		player.GetComponent<PlayerController>().attack = "vassourada";
+		player.GetComponent<PlayerController>().attack = "guarda_chuva";
 		StartCoroutine(spawner());
 		
 	}

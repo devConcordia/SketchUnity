@@ -23,8 +23,10 @@ public class EnemyMonoBehaviour : MonoBehaviour {
 		
 		onTakeDamage();
 		
-		if( HP <= 0 ) 
+		if( HP <= 0 )  {
+			GameData.killEnemiesCount++;
 			onDestroy();
+		}
 		
 	}
 	

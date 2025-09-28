@@ -38,6 +38,7 @@ public class Friend : MonoBehaviour, IInteractable {
 		///
 		GameData.targetMap = GameData.PUB;
 		
+		
 	}
 	
 	

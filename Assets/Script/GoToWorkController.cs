@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 
 public class GoToWorkController : MonoBehaviour
@@ -54,34 +55,75 @@ public class GoToWorkController : MonoBehaviour
 	
 	private IEnumerator Countdown() {
 		
-		for( int i = 60; i > 0; i-- ) {
+		for( int i = 30; i > 0; i-- ) {
 			/// perde a referencia quando mudar de cena
-			if( hud == null ) {
+			if( hud == null )
 				hud = GameObject.Find("HUD").GetComponent<HudController>();
-			//	player = GameObject.Find("Player").GetComponent<PlayerController>();
-			}
 			hud.setCountdown( i );
 			yield return new WaitForSeconds( 1f );
 		}
 		
-		/*
-		///
-		while( GameData.health > 0 ) {
-			/// na cena da tv, perde a referencia do player
-			/// então encerramos a animação do vida
-			if( player ) {
-				GameData.nextDay();
-				break;
-			}
-			player.takeDamage( 1 );
-			yield return new WaitForSeconds( .1f );
-		}*/
-		
+		GameData.bossPhone = true;
 		
 		GameData.nextDay();
+		SceneManager.LoadScene( "HouseScene" );
+		
 		///
 		Destroy( gameObject );
 		
+		
+	//	waitClick = true;
+	//	countSpaceClick = 0;
+	//	
+	//	hud.fadeOut();
+	//	hud.writeDialog("Caramba, sempre que VOCÊ precisou de ajuda a empresa te ajudou, nunca atrasou salário, tem vale refeição, e quando VOCÊ precisou cuidar da sua mãe a gente até adiantou suas férias ...");
+	//	hud.writeDialog("... e quando a empresa precisa VOCÊ NÃO PODE AJUDAR, e ainda fala que estava vindo. É como dizem existe colaborador e existe funcionário e VOCÊ não está colaborando com a empresa.");
+		
 	}
+	
+	
+/*	private InputAction action;
+	private bool waitClick = false;
+	private int countSpaceClick = 0;
+	
+	
+    private void OnKeyPressed(InputAction.CallbackContext context) {
+        
+		if( waitClick && context.control.displayName == "Space" ) {
+			
+			if( countSpaceClick++ > 0 ) {
+				
+				GameData.nextDay();
+				SceneManager.LoadScene( "HouseScene" );
+				
+				///
+				Destroy( gameObject );
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	private void OnEnable() {
+        
+        action = new InputAction( type: InputActionType.Button );
+
+        ///
+        action.AddBinding("<Keyboard>/space");
+		
+        action.performed += OnKeyPressed;
+        action.Enable();
+    
+	}
+
+    private void OnDisable() {
+		
+        action.performed -= OnKeyPressed;
+        action.Disable();
+		
+    }
+/**/	
 	
 }

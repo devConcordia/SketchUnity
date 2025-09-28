@@ -9,8 +9,10 @@ public class BeerController : EnemyMonoBehaviour
    
 	///
 //	[SerializeField] private GameObject[] beerStylesPrefab;
+	[SerializeField] private Sprite[] balloonSprites;
 	[SerializeField] private GameObject balloon;
 	[SerializeField] private RuntimeAnimatorController[] animators;
+	private SpriteRenderer balloonSpriteRenderer;
 	
 	
 	private Animator animator;
@@ -26,6 +28,7 @@ public class BeerController : EnemyMonoBehaviour
 		
         animator = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        balloonSpriteRenderer = balloon.GetComponent<SpriteRenderer>();
 		
 		int randomStyleIndex = Random.Range( 0, animators.Length );
 		
@@ -59,7 +62,7 @@ public class BeerController : EnemyMonoBehaviour
 		
 		knockTimer = 2f;
 		
-		if( Random.Range(0f,1f) < .25 ) 
+		if( Random.Range(0f,1f) < .125f ) 
 			StartCoroutine( ShowBallon() );
 		
 	}
@@ -67,6 +70,12 @@ public class BeerController : EnemyMonoBehaviour
 	private IEnumerator ShowBallon() {
 		
 		balloon.SetActive(true);
+		
+		if( Random.Range(0f,1f) < .5f ) {
+			balloonSpriteRenderer.sprite = balloonSprites[0];
+		} else {
+			balloonSpriteRenderer.sprite = balloonSprites[1];
+		}
 		
         yield return new WaitForSeconds( 3f );
 		

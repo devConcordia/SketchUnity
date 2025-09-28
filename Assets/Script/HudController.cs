@@ -12,14 +12,21 @@ public class HudController : MonoBehaviour {
     
 	///
 	[SerializeField] private TMP_Text helperText;
-	[SerializeField] private TMP_Text healthText;
 	[SerializeField] private TMP_Text dialogText;
 	[SerializeField] private TMP_Text confirmText;
 	[SerializeField] private TMP_Text closeText;
 	[SerializeField] private TMP_Text countdownText;
 	
+	//[header("Health Settings")]
+	[SerializeField] private Sprite[] healthFrames;
+	[SerializeField] private Image healthBox;
+	[SerializeField] private TMP_Text healthText;
+	
+	
 	///
-	[SerializeField] private SpriteRenderer maskLayer;
+	[SerializeField] private GameObject maskLayer;
+	[SerializeField] private GameObject rain;
+	[SerializeField] private SpriteRenderer fadeLayer;
     
 	private InputAction action;
 	private Queue<string[]> messages = new Queue<string[]>(); 
@@ -33,10 +40,15 @@ public class HudController : MonoBehaviour {
 	private string writingText = "";
 	private Coroutine writingRoutine;
 	
-	
-	public void FixedUpdate() {
+	private void Start() {
 		
-		if( maskLayer != null && Camera.main != null ) {
+		setHealth( GameData.health );
+		
+	}
+	
+	private void FixedUpdate() {
+		
+		if( Camera.main != null ) {
 			
             Vector3 camera = Camera.main.transform.position;
 
@@ -50,6 +62,11 @@ public class HudController : MonoBehaviour {
 	public void setHealth( int value ) {
 		
 		healthText.text = value +"%";
+		
+		//int spriteIndex = (int) Mathf.Floor( ((float)value)/9f);
+		int spriteIndex = value*8/100;
+		
+		healthBox.sprite = healthFrames[ spriteIndex ];
 		
 	}
 	
@@ -65,6 +82,12 @@ public class HudController : MonoBehaviour {
 			countdownText.transform.parent.gameObject.SetActive( true );
 		
 		countdownText.text = value +" seg";
+		
+	}
+	
+	public void showRain() {
+		
+		rain.SetActive(true);
 		
 	}
 	
@@ -185,16 +208,16 @@ public class HudController : MonoBehaviour {
 	
 	public void fadeIn() {
 		
-		maskLayer.color = new Color(0f,0f,0f,1f);
-		maskLayer.gameObject.SetActive( true );
+		fadeLayer.color = new Color(0f,0f,0f,1f);
+		fadeLayer.gameObject.SetActive( true );
 		StartCoroutine( fade( 1f, 0f, true ) );
 		
 	}
 	
 	public void fadeOut() {
 		
-		maskLayer.color = new Color(0f,0f,0f,0f);
-		maskLayer.gameObject.SetActive( true );
+		fadeLayer.color = new Color(0f,0f,0f,0f);
+		fadeLayer.gameObject.SetActive( true );
 		StartCoroutine( fade( 0f, 1f ) );
 		
 	}
@@ -205,16 +228,16 @@ public class HudController : MonoBehaviour {
 		
 		for( int i = 0; i < 10; i++ ) {
 			
-			Color color = maskLayer.color;
+			Color color = fadeLayer.color;
 			color.a += step;
-			maskLayer.color = color;
+			fadeLayer.color = color;
 			
             yield return new WaitForSeconds(0.1f);
 			
 		}
 		
 		if( disable )
-			maskLayer.gameObject.SetActive( false );
+			fadeLayer.gameObject.SetActive( false );
 		
 	}
 	

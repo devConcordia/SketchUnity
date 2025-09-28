@@ -138,6 +138,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   HP: 3
+  balloonSprites:
+  - {fileID: -2364255746343062911, guid: acfa3e7e2ea1f3b42a874637c639ec6a, type: 3}
+  - {fileID: -7776924490467630227, guid: 72133a00c5ec2924ead1804853f0da5e, type: 3}
   balloon: {fileID: 396674153447260089}
   animators:
   - {fileID: 9100000, guid: bcdf5a40ccb4e314a861886541f06d1c, type: 2}
@@ -280,7 +283,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.049535245, y: 0.06412637}
+  m_Offset: {x: -0.0031365156, y: -0.058774382}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5769061, y: 0.4121074}
@@ -290,5 +293,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1580961, y: 0.8001735}
+  m_Size: {x: 1.0527525, y: 0.7299444}
   m_EdgeRadius: 0

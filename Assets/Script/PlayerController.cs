@@ -36,8 +36,10 @@ public class PlayerController : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		
 		/// 
-		hud.setHealth( GameData.health );
-		hud.setHelper( "Dia "+ GameData.day );
+		//hud.setHealth( GameData.health );
+		//hud.setHelper( "Dia "+ GameData.day );
+		
+		hud.setHelper( "Dia "+ GameData.day +" - "+ GameData.quest );
 		
     }
 
@@ -149,12 +151,18 @@ public class PlayerController : MonoBehaviour
 			GameData.health -= value;
 			hud.setHealth( GameData.health );
 			
-			if( GameData.health < 1 ) endDay();
+			if( GameData.health < 1 ) {
+				
+				if( GameData.day == 2 )
+					GameData.bossPhone = true;
+				
+				endDay();
+				
+			}
 			
 		}
 		
 	}
-	
 	
 	private void OnCollisionEnter2D(Collision2D collision) {
 		
@@ -187,8 +195,5 @@ public class PlayerController : MonoBehaviour
 		}
 		
 	}
-	
-	
-	
 	
 }
