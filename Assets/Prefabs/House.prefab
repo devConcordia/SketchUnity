@@ -863,7 +863,7 @@ Transform:
   m_GameObject: {fileID: 1675812194674786023}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.201281, y: 2.503816, z: 0.0052825124}
+  m_LocalPosition: {x: 2.14, y: 0.38, z: 0.0052825124}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1035,6 +1035,7 @@ GameObject:
   - component: {fileID: 5204930874827551292}
   - component: {fileID: 1178013370146936412}
   - component: {fileID: 7216982112771867813}
+  - component: {fileID: 273941562400369228}
   m_Layer: 0
   m_Name: post apoc toxic wasteland set updated_50
   m_TagString: Untagged
@@ -1138,6 +1139,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 0}
+--- !u!61 &273941562400369228
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807606729737385106}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.75, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1821500038312945089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,6 +3989,7 @@ GameObject:
   - component: {fileID: 6536354349337258396}
   - component: {fileID: 5167290393237945222}
   - component: {fileID: 8051772123585243771}
+  - component: {fileID: 535398284143212824}
   m_Layer: 0
   m_Name: post apoc toxic wasteland set updated_54
   m_TagString: Untagged
@@ -4045,6 +4093,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 0}
+--- !u!61 &535398284143212824
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022668869854376807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5625, y: 0.625}
+    newSize: {x: 0.5625, y: 0.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5625, y: 0.625}
+  m_EdgeRadius: 0
 --- !u!1 &2024685086581047572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,7 +4215,7 @@ Transform:
   m_GameObject: {fileID: 2108425500998587671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.158719, y: 1.7538161, z: 0.0052825124}
+  m_LocalPosition: {x: 0.34849453, y: 2.0546741, z: 0.0052825124}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4311,7 +4405,7 @@ Transform:
   m_GameObject: {fileID: 2413930967868532138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.139999, y: 0.11953318, z: 0.0052825124}
+  m_LocalPosition: {x: -1.47, y: 1.97, z: 0.0052825124}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4397,7 +4491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8588a894cf79e468b544e57705a979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zdefault: 10
+  zdefault: -100
 --- !u!50 &2112780970778483405
 Rigidbody2D:
   serializedVersion: 5
@@ -4923,7 +5017,7 @@ Transform:
   m_GameObject: {fileID: 4059517911279628744}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.307214, y: 1.409142, z: 0.0052825124}
+  m_LocalPosition: {x: -0.8, y: 1.71, z: 0.0052825124}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5098,7 +5192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &877927599950146154
 Transform:
   m_ObjectHideFlags: 0
@@ -5233,8 +5327,8 @@ GameObject:
   - component: {fileID: 5422945372132820455}
   - component: {fileID: 5183655107721124648}
   - component: {fileID: 8008520548600244092}
-  - component: {fileID: 5501870434820784826}
   - component: {fileID: 8722484380980316961}
+  - component: {fileID: 141405151561206473}
   m_Layer: 0
   m_Name: SinkB
   m_TagString: Untagged
@@ -5339,8 +5433,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &5501870434820784826
-BoxCollider2D:
+--- !u!114 &8722484380980316961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670015849436641437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8588a894cf79e468b544e57705a979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zdefault: 0
+--- !u!60 &141405151561206473
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5373,7 +5480,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.41490555, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5383,21 +5490,16 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2326889, y: 3.9375}
-  m_EdgeRadius: 0
---- !u!114 &8722484380980316961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4670015849436641437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8588a894cf79e468b544e57705a979, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zdefault: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.03125, y: 1.96875}
+      - {x: -0.96858597, y: 0.7610822}
+      - {x: -0.21892357, y: 0.7822671}
+      - {x: -0.17294121, y: -0.4524052}
+      - {x: 0.9951477, y: -0.4524052}
+      - {x: 1.03125, y: -1.2530947}
+      - {x: 1.03125, y: 1.96875}
+  m_UseDelaunayMesh: 0
 --- !u!1 &4909971769879425432
 GameObject:
   m_ObjectHideFlags: 0
@@ -6480,7 +6582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8588a894cf79e468b544e57705a979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zdefault: 10
+  zdefault: -100
 --- !u!50 &6444880911835877134
 Rigidbody2D:
   serializedVersion: 5
@@ -6756,6 +6858,7 @@ GameObject:
   - component: {fileID: 8738934749952207734}
   - component: {fileID: 1154760930504106357}
   - component: {fileID: 4357746665338326617}
+  - component: {fileID: 23387088154057345}
   m_Layer: 0
   m_Name: post apoc toxic wasteland set updated_53
   m_TagString: Untagged
@@ -6859,6 +6962,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 0}
+--- !u!61 &23387088154057345
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6838467305236855992}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1875, y: 1.625}
+    newSize: {x: 1.1875, y: 1.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.1875, y: 1.625}
+  m_EdgeRadius: 0
 --- !u!1 &6857425849776355076
 GameObject:
   m_ObjectHideFlags: 0
@@ -7285,6 +7434,7 @@ GameObject:
   - component: {fileID: 7924773805084986702}
   - component: {fileID: 6674435732160379830}
   - component: {fileID: 865285296872279213}
+  - component: {fileID: 4278497763096482817}
   m_Layer: 0
   m_Name: post apoc toxic wasteland set updated_18
   m_TagString: Untagged
@@ -7388,6 +7538,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 0}
+--- !u!61 &4278497763096482817
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293679347804824764}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.5}
+    newSize: {x: 1, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &7399484972673599673
 GameObject:
   m_ObjectHideFlags: 0
@@ -8585,6 +8781,7 @@ GameObject:
   - component: {fileID: 5366362652994524578}
   - component: {fileID: 5922488954259776127}
   - component: {fileID: 5186495113771134245}
+  - component: {fileID: 7453307704171341301}
   m_Layer: 0
   m_Name: post apoc toxic wasteland set updated_53
   m_TagString: Untagged
@@ -8688,6 +8885,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 0}
+--- !u!61 &7453307704171341301
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7979337683578299240}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1875, y: 1.625}
+    newSize: {x: 1.1875, y: 1.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.1875, y: 1.625}
+  m_EdgeRadius: 0
 --- !u!1 &8141991839556604814
 GameObject:
   m_ObjectHideFlags: 0
@@ -11771,7 +12014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8588a894cf79e468b544e57705a979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zdefault: 10
+  zdefault: -100
 --- !u!50 &6877377336215032593
 Rigidbody2D:
   serializedVersion: 5

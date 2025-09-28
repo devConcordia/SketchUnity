@@ -48,7 +48,11 @@ public class Friend : MonoBehaviour, IInteractable {
         
 		if( spoke && context.control.displayName == "Space" ) {
 			if( count++ > 1 ) {
-				Destroy( gameObject );
+			//	Destroy( gameObject );
+				
+				PlayerController player = GameObject.Find("Player").GetComponent<PlayerController>();
+				player.changeScene("PubScene");
+				
 			}
 		}
 			

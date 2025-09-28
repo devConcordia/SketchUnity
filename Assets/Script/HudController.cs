@@ -49,7 +49,7 @@ public class HudController : MonoBehaviour {
 	
 	public void setHealth( int value ) {
 		
-		healthText.text = "Health: "+ value +"%";
+		healthText.text = value +"%";
 		
 	}
 	

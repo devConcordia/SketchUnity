@@ -16,7 +16,7 @@ public static class GameData {
 	public static bool tutorial = false;
 	public static bool tutorialCombate = false;
 	
-	public static int day = 1;
+	public static int day = 2;
 	
 	public static bool alarm = false;
 	public static bool phone = false;
@@ -40,6 +40,7 @@ public static class GameData {
 		alarm = false;
 		phone = false;
 		houseCleaned = false;
+		tvWatched = false;
 		targetMap = 0;
 		
 	}

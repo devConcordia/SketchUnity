@@ -45,16 +45,16 @@ public class HouseManager : MonoBehaviour {
 	
 	private IEnumerator wakeup() {
 		
-		float speed = 1f;
+		float speed = .6f;
 		float delay = 1.5f;
 		
 		if( GameData.day > 2 ) {
 			
-			speed = .6f;
+			speed = .2f;
 			
 		} else if( GameData.day > 1 ) {
 			
-			speed = .8f;
+			speed = .4f;
 			
 		}
 		
@@ -103,6 +103,9 @@ public class HouseManager : MonoBehaviour {
 	void dayThreeOrMore() {
 		
 		GoToWorkController.StopCountdown();
+		
+		if( !GameData.houseCleaned )
+			dirtObjects2.SetActive( true );
 		
 	}
 	
