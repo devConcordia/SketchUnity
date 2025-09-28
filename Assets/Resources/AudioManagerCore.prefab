@@ -145,3 +145,4 @@ MonoBehaviour:
   menuAudioClip: {fileID: 8300000, guid: e27c57d87c3b6ac4d8d82326f4e38186, type: 3}
   combatAudioClip: {fileID: 8300000, guid: 2ada46b4a028b3348ae0fa9c9623111d, type: 3}
   loopAudioClip: {fileID: 8300000, guid: 55fc9599f11dd544db006a548f4ca9ea, type: 3}
+  rainAudioClip: {fileID: 8300000, guid: 9805c03a6810eda4fb1a4c142493a1a9, type: 3}

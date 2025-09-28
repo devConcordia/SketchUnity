@@ -17,7 +17,7 @@ public static class GameData {
 	public static bool tutorial = false;
 	public static bool tutorialCombate = false;
 	
-	public static int day = 1;
+	public static int day = 2;
 	
 	public static int killEnemiesCount = 0;
 	

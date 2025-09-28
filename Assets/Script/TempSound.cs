@@ -3,7 +3,7 @@ using UnityEngine;
 public class TempSound : MonoBehaviour
 {
     
-	public static void Play( AudioClip clip, float volume = 1.0f, float pitch = 1.0f ) {
+	public static AudioSource Play( AudioClip clip, float volume = 1.0f, float pitch = 1.0f ) {
 		
 		GameObject target = new GameObject("TempSound");
 		AudioSource source = target.AddComponent<AudioSource>();
@@ -14,6 +14,8 @@ public class TempSound : MonoBehaviour
 		source.Play();
 		
 		Destroy(target, clip.length / Mathf.Abs(pitch));
+		
+		return source;
 		
     }
 	

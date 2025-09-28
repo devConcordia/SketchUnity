@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
 	[SerializeField] public AudioClip menuAudioClip;
 	[SerializeField] public AudioClip combatAudioClip;
 	[SerializeField] public AudioClip loopAudioClip;
+	[SerializeField] public AudioClip rainAudioClip;
 
 	private AudioSource soundtrackSource;
 	
@@ -72,6 +73,16 @@ public class AudioManager : MonoBehaviour
         if( soundtrackSource.clip == loopAudioClip ) return;
         
         soundtrackSource.clip = loopAudioClip;
+        soundtrackSource.loop = true;
+        soundtrackSource.Play();
+		
+    }
+	
+    public void playRain() {
+		
+        if( soundtrackSource.clip == loopAudioClip ) return;
+        
+        soundtrackSource.clip = rainAudioClip;
         soundtrackSource.loop = true;
         soundtrackSource.Play();
 		

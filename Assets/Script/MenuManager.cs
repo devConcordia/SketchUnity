@@ -26,4 +26,10 @@ public class MenuManager : MonoBehaviour {
 		
 	}
 	
+	public void menuScene() {
+		
+		SceneManager.LoadScene("MenuScene");
+		
+	}
+	
 }

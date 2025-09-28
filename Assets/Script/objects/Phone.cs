@@ -17,6 +17,10 @@ public class Phone : MonoBehaviour, IInteractable {
 	
     virtual public void interact() {
 		
+		HouseManager manager = GameObject.Find("SceneManager").GetComponent<HouseManager>();
+		
+		if( manager ) manager.stopPhoneAudio();
+		
 		/// não toca mais os audios do telefone durante esse dia
 		GameData.phone = true;
 		

@@ -15,11 +15,12 @@ public class TownManager : MonoBehaviour
 	
 	[SerializeField] private float initialInterval = 5f;
 	
+	private AudioManager audioCtx;
+	
 	void Start() {
 		
 		hud.fadeIn();
-		AudioManager audioCtx = AudioManager.GetContext();
-		audioCtx.playLoop();
+		audioCtx = AudioManager.GetContext();
 		
 		///
 		switch( GameData.day ) {
@@ -33,20 +34,29 @@ public class TownManager : MonoBehaviour
 	
 	void dayOne() {
 		
+		audioCtx.playLoop();
+		
 	}
 	
 	void dayTwo() {
 		
 		hud.showRain();
+		
 		bordersDayTwo.SetActive(true);
 		player.GetComponent<PlayerController>().attack = "guarda_chuva";
+		
 		StartCoroutine(spawner());
 		
 	}
 	
 	void dayThreeOrMore() {
 		
+		audioCtx.playRain();
+		
+		player.GetComponent<PlayerController>().attack = "guarda_chuva";
 		bordersDayThree.SetActive(true);
+		
+		StartCoroutine(spawner());
 		
 	}
 	

@@ -14,6 +14,8 @@ public class HouseManager : MonoBehaviour {
 	[SerializeField] private GameObject player;
 	[SerializeField] private GameObject sleepPlayer;
 	
+	private AudioSource sourcePhoneAudio;
+	
 	void Start() {
 		
 		AudioManager audioCtx = AudioManager.GetContext();
@@ -87,7 +89,7 @@ public class HouseManager : MonoBehaviour {
 		}
 		
 		if( !GameData.phone )
-			StartCoroutine(DelayPhone(15f));
+			StartCoroutine(DelayPhone(12f));
 		
 	}
 	
@@ -97,7 +99,7 @@ public class HouseManager : MonoBehaviour {
 			dirtObjects2.SetActive( true );
 		
 		if( !GameData.phone )
-			StartCoroutine(DelayPhone(15f));
+			StartCoroutine(DelayPhone(12f));
 		
 	}
 	
@@ -106,7 +108,7 @@ public class HouseManager : MonoBehaviour {
 		GoToWorkController.StopCountdown();
 		
 		if( GameData.bossPhone )
-			StartCoroutine(DelayPhone(15f));
+			StartCoroutine(DelayPhone(12f));
 		
 		if( !GameData.houseCleaned )
 			dirtObjects2.SetActive( true );
@@ -118,10 +120,18 @@ public class HouseManager : MonoBehaviour {
 		yield return new WaitForSeconds( delay );
 		
 		if( !GameData.phone ) {
-			TempSound.Play( phoneAudioClip );
+			sourcePhoneAudio = TempSound.Play( phoneAudioClip );
 			/// espera e toca novamente
 			StartCoroutine(DelayPhone(20f));
 		}
+		
+	}
+	
+	
+	public void stopPhoneAudio() {
+		
+		if( sourcePhoneAudio )
+			sourcePhoneAudio.Stop();
 		
 	}
 	
