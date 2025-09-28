@@ -44,7 +44,7 @@ public class PubManager : MonoBehaviour
 	
 	private IEnumerator Countdown() {
 		
-		for( int i = 30; i > 0; i-- ) {
+		for( int i = 60; i > 0; i-- ) {
 			hud.setCountdown( i );
 			yield return new WaitForSeconds( 1f );
 		}

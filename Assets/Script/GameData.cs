@@ -3,7 +3,7 @@ public static class GameData {
 	
 	///
 	public static int health = 100;
-	public static float saturation = -20;
+	public static float saturation = -25;
 	
 	/// referencia dos alvos para exibir no mapa
 	public const int FRIEND = 1;
@@ -52,11 +52,11 @@ public static class GameData {
 		
 		if( day > 2 ) {
 			
-			saturation = -60f;
+			saturation = -90f;
 			
 		} else {
 			
-			saturation = -40f;
+			saturation = -60f;
 			
 		}
 		

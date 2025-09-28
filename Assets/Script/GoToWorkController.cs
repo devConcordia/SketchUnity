@@ -55,7 +55,7 @@ public class GoToWorkController : MonoBehaviour
 	
 	private IEnumerator Countdown() {
 		
-		for( int i = 30; i > 0; i-- ) {
+		for( int i = 45; i > 0; i-- ) {
 			/// perde a referencia quando mudar de cena
 			if( hud == null )
 				hud = GameObject.Find("HUD").GetComponent<HudController>();
