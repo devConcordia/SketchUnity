@@ -28,7 +28,13 @@ public class Phone : MonoBehaviour, IInteractable {
 		switch( GameData.day ) {
 			case 1: dayOne(); break;
 			case 2: dayTwo(); break;
-			case 3: dayThree(); break;
+			case 3: 
+				if( GameData.bossPhone ) {
+					dayThree(); 
+				} else {
+					dayFourOrMore();
+				}
+				break;
 			default: dayFourOrMore(); break;
 		}
 		
@@ -104,6 +110,9 @@ public class Phone : MonoBehaviour, IInteractable {
 		hud.fadeOut();
 		hud.writeDialog("Atendente: Ola, Centro de apoio psicológico, como posso ajudar?");
 		hud.writeDialog("Alberto: Estou passando por uns problemas, gostaria de agendar uma consulta ...");
+		
+		///
+		hud.writeDialog("Fim de Jogo!\nObrigado por jogar\n"+ GameData.killEnemiesCount +" monstros desrrotados.");
 		
 		nextScene = "CreditsScene";
 		countSpaceClick = 0;

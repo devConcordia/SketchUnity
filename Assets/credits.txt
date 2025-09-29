@@ -1,6 +1,10 @@
+- Autorais -
 
-Fonts
-https://www.dafont.com/pixel-operator.font
+Sprites - Kaique Souza
+Sonoplastia - João L. L. Moraes
+Programação - Renan S. Concordia
+
+- Free Assets -
 
 Sprites
 https://penzilla.itch.io/top-down-retro-interior
@@ -12,7 +16,8 @@ https://opengameart.org/content/pixel-art-tv-sprite-cc0
 https://opengameart.org/content/pixel-art-tv-set
 https://opengameart.org/content/animated-display-static
 
+Fonts
+https://www.dafont.com/pixel-operator.font
+
 Shaders
 https://www.shadertoy.com/view/M3XGWH
-
-

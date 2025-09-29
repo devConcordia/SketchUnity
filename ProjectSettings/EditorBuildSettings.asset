@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 3768f44771e62644d9b11b0d4c8960bc
+  - enabled: 1
     path: Assets/Scenes/HouseScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/HouseCombatScene.unity
+    guid: 3aad4b68533a2d14181f77c9f9bfdea4
   - enabled: 1
     path: Assets/Scenes/TVScene.unity
     guid: 4cd2811c8b2c90241a40a669d4e38290
@@ -15,17 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TownScene.unity
     guid: 29888e24916273e4f8bc396c90bb4a54
   - enabled: 1
-    path: Assets/Scenes/HouseCombatScene.unity
-    guid: 3aad4b68533a2d14181f77c9f9bfdea4
-  - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
-    guid: 3768f44771e62644d9b11b0d4c8960bc
+    path: Assets/Scenes/PubScene.unity
+    guid: 6fda44b5d6b006340a70d66fdd9ea1d3
   - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: 6fa4bff256a5630419c658f2f5d86f1e
-  - enabled: 1
-    path: Assets/Scenes/PubScene.unity
-    guid: 6fda44b5d6b006340a70d66fdd9ea1d3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

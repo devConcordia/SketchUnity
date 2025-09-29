@@ -17,7 +17,7 @@ public static class GameData {
 	public static bool tutorial = false;
 	public static bool tutorialCombate = false;
 	
-	public static int day = 2;
+	public static int day = 1;
 	
 	public static int killEnemiesCount = 0;
 	
@@ -65,17 +65,17 @@ public static class GameData {
 	public static void reset() {
 		
 		health = 100;
+		saturation = -25;
 		targetMap = 0;
-		
-		tutorial = false;
-		tutorialCombate = false;
-		
 		day = 1;
-		killEnemiesCount = 1;
-		
+		killEnemiesCount = 0;
+		alarm = false;
+		phone = false;
+		bossPhone = false;
+		wakeup = false;
 		tvWatched = false;
 		houseCleaned = false;
-		bossPhone = false;
+		quest = "Limpe a casa";
 		
 	}
 	

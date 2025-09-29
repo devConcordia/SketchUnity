@@ -147,14 +147,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 888047804}
   - {fileID: 455818167}
   m_Father: {fileID: 1959890456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 210.42, y: 389.38}
+  m_SizeDelta: {x: 210.42, y: 507.85}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &218347769
 GameObject:
@@ -299,8 +298,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 547.11, y: 348.84}
+  m_AnchoredPosition: {x: 0, y: -0.80000305}
+  m_SizeDelta: {x: 547.11, y: 495.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455818168
 MonoBehaviour:
@@ -322,35 +321,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fonts
-
-    https://www.dafont.com/pixel-operator.font
-
-
-    Sprites
-
-    https://penzilla.itch.io/top-down-retro-interior
-
-    https://damiandeamicis.itch.io/city-assets-pack-basic
-
-    https://thelazystone.itch.io/post-apocalypse-pixel-art-asset-pack
-
-    https://0-mem0ry.itch.io/post-apocalyptic-toxic-wasteland-free
-
-    https://craftpix.net/freebies/free-pixel-art-plants-for-farm
-
-    https://opengameart.org/content/pixel-art-tv-sprite-cc0
-
-    https://opengameart.org/content/pixel-art-tv-set
-
-    https://opengameart.org/content/animated-display-static
-
-
-    Shaders
-
-    https://www.shadertoy.com/view/M3XGWH
-
-'
+  m_text: "- Autorais -\n\nSprites - Kaique Souza\nSonoplastia - Jo\xE3o L. L. Moraes\nPrograma\xE7\xE3o
+    - Renan S. Concordia\n\n- Free Assets -\n\nSprites\nhttps://penzilla.itch.io/top-down-retro-interior\nhttps://damiandeamicis.itch.io/city-assets-pack-basic\nhttps://thelazystone.itch.io/post-apocalypse-pixel-art-asset-pack\nhttps://0-mem0ry.itch.io/post-apocalyptic-toxic-wasteland-free\nhttps://craftpix.net/freebies/free-pixel-art-plants-for-farm\nhttps://opengameart.org/content/pixel-art-tv-sprite-cc0\nhttps://opengameart.org/content/pixel-art-tv-set\nhttps://opengameart.org/content/animated-display-static\n\nFonts\nhttps://www.dafont.com/pixel-operator.font\n\nShaders\nhttps://www.shadertoy.com/view/M3XGWH\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 19418973c60f82e47921424bba623a93, type: 2}
   m_sharedMaterial: {fileID: 7080781467721377383, guid: 19418973c60f82e47921424bba623a93, type: 2}
@@ -463,8 +435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159.9, y: 2.92}
-  m_SizeDelta: {x: 274.2, y: 178.16}
+  m_AnchoredPosition: {x: -185.13, y: 34.06}
+  m_SizeDelta: {x: 223.73, y: 115.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724945286
 MonoBehaviour:
@@ -486,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ascens\xE3o Esper\n\nKaiqui Souza\nRenan S Concordia"
+  m_text: "Ascens\xE3o Esper\n\nJo\xE3o L. L. Moraes\nKaiqui Souza\nRenan S. Concordia"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 19418973c60f82e47921424bba623a93, type: 2}
   m_sharedMaterial: {fileID: 7080781467721377383, guid: 19418973c60f82e47921424bba623a93, type: 2}
@@ -638,11 +610,11 @@ Transform:
   m_GameObject: {fileID: 888047801}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.34999, y: -97.18, z: -3239.9998}
-  m_LocalScale: {x: 36, y: 36, z: 36}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 45601956}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1002310224
 GameObject:
@@ -1514,7 +1486,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1100873592}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5843136
+  m_Size: 0.44800633
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1981,4 +1953,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1388605484}
   - {fileID: 1933620308}
+  - {fileID: 888047804}
   - {fileID: 1052100170}
